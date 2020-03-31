@@ -1,0 +1,80 @@
+/* Personal CSS for the itsfood website (made by itsfood) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Theme */
+@media (prefers-color-scheme: light) {
+    :root {
+        --theme-web-bg: white;
+        --theme-text: black;
+        --theme-color: var(--light);
+        --theme-primary: var(--primary);
+        --theme-alt: #3f3f3f;
+    }
+
+    .nav-link:hover #navbar-youtube {
+        color: red;
+    }
+
+    .nav-link:hover #navbar-twitch {
+        color: #6441A4
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-web-bg: #1a1a1a;
+        --theme-text: white;
+        --theme-color: var(--dark);
+        --theme-primary: var(--primary);
+        --theme-alt: #afafaf;
+    }
+}
+.theme-control {
+    background-color: var(--theme-color);
+    color: var(--theme-text);
+}
+.theme-control a {
+    transition: 150ms ease-in;
+    color: var(--theme-text);
+    text-decoration: none;
+}
+.theme-control a:hover {
+    color: var(--theme-alt);
+}
+
+/* Other Adjustments */
+
+body {
+    background-color: var(--theme-web-bg);
+    color: var(--theme-text) !important;
+}
+
+nav {
+    background-color: var(--theme-color);
+    color: var(--theme-alt);
+    font-size: 1.3rem;
+    height: 4rem;
+}
+
+.nav-link {
+    color: var(--theme-alt) !important;
+}
+.nav-link:hover {
+    color: var(--theme-text) !important;
+}
+
+.nav-link #navbar-youtube,
+.nav-link #navbar-twitch,
+.nav-link #navbar-home {
+    transition: 150ms ease-in;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.card {
+    border: none
+}

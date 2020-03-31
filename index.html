@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>cornhub</title>
+    <link href="" rel="icon">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- jsCookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Personal CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Icon Kit from Font Awesome -->
+    <script src="https://kit.fontawesome.com/32cc714e85.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" id="navbar">
+        <img class="navbar-brand" src="img/profile.png" height="110px" width="100px"
+            style="border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; position: absolute; top: -5px;">
+        <ul class="nav" style="position: absolute; left: 120px;">
+            <li class="nav-item">
+                <a class="nav-link" href="#top">
+                    <i class="fa fa-home" aria-hidden="true" id="navbar-home"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#twitch">
+                    <i class="fa fa-twitch" aria-hidden="true" id="navbar-twitch"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#youtube">
+                    <i class="fa fa-youtube" aria-hidden="true" id="navbar-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="d-lg-flex justify-content-lg-center mt-5 pt-5">
+            <div class="jumbotron w-100 shadow theme-control">
+                <img src="img/profile.png" class="align-content-center float-right" height="110rem"
+                    style="border-radius: 100%;">
+                <h1>itsfood</h1>
+                <p class="lead">yeah there is a website</p>
+            </div>
+        </div>
+        <div class="alert alert-info shadow mb-2">
+            <strong>Info!</strong> If you have come accross this website, it is still in development! You can use basic features but that is all.
+        </div>
+        <div class="mt-3 card shadow theme-control">
+            <div class="card-body">
+                <h3 class="mb-0">Hi, my name is itsfood. And this is my website.</h3><br>
+                <p>I'm a Twitch Streamer and a YouTuber, and I like to make gaming videos spiced up with comedy! (Add info?)</p>
+            </div>
+        </div>
+        <div id="twitch" style="height: 4rem;"></div>
+        <div data-spy="scroll" data-target="#navbar" data-offset="0"
+            class="card shadow theme-control">
+            <div class="card-body">
+                <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.github.io" height="605px"
+                    width="100%" frameborder="false" scrolling="false" allowfullscreen="true"
+                    style="border-radius: 5px;">
+                </iframe>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.twitch.tv/itsfoodlive" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i> Follow on Twitch</a>
+            </div>
+        </div>
+        <div id="youtube" style="height: 4rem;"></div>
+        <div data-spy="scroll" data-target="#navbar" data-offset="0"
+            class="card shadow theme-control">
+            <div class="card-body">
+                <iframe src="https://www.youtube.com/embed/bAFVtqJx9kc" height="605px" width="100%" frameborder="false"
+                    scrolling="false" allowfullscreen="true" style="border-radius: 5px;">
+                </iframe>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> Subscribe on YouTube</a>
+            </div>
+        </div>
+        <div style="height: 1rem;"></div>
+    </main>
+
+
+    <!--jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
