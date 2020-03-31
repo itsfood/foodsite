@@ -81,6 +81,22 @@ nav {
     color: var(--theme-text) !important;
 }
 
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        border-top-right-radius: 50% !important;
+        border-bottom-left-radius: 0% !important;
+        position: absolute;
+        top: -5px !important;
+        left: -5px !important;
+    }
+}
+.navbar-brand {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute !important;
+    top: -5px !important;
+}
+
 .active {
     color: var(--theme-text) !important;
 }
