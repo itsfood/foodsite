@@ -28,17 +28,22 @@
         <ul class="nav" style="position: absolute; left: 120px;">
             <li class="nav-item">
                 <a class="nav-link" href="#top">
-                    <i class="fa fa-home" aria-hidden="true" id="navbar-home"></i>
+                    <i class="fa fa-home" id="navbar-home"></i>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#twitch">
-                    <i class="fa fa-twitch" aria-hidden="true" id="navbar-twitch"></i>
+                <a class="nav-link" href="#twitch" ondblclick="window.open('https://www.twitch.com/itsfoodlive')">
+                    <i class="fa fa-twitch" id="navbar-twitch"></i>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#youtube">
-                    <i class="fa fa-youtube" aria-hidden="true" id="navbar-youtube"></i>
+                <a class="nav-link" href="#youtube" ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
+                    <i class="fa fa-youtube" id="navbar-youtube"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#discord" ondblclick="window.open('https://discord.gg/P7KDmDk)">
+                    <i class="fab fa-discord" id="navbar-discord"></i>
                 </a>
             </li>
         </ul>
@@ -53,41 +58,106 @@
             </div>
         </div>
         <div class="alert alert-info shadow mb-2">
-            <strong>Info!</strong> If you have come accross this website, it is still in development! You can use basic features but that is all.
+            <strong>Info!</strong> If you have come accross this website, it is still in development! You can use basic
+            features but that is all.
         </div>
         <div class="mt-3 card shadow theme-control">
             <div class="card-body">
                 <h3 class="mb-0">Hi, my name is itsfood. And this is my website.</h3><br>
-                <p>I'm a Twitch Streamer and a YouTuber, and I like to make gaming videos spiced up with comedy! (Add info?)</p>
+                <p>I'm a Twitch Streamer and a YouTuber, and I like to make gaming videos spiced up with comedy! (Add
+                    info?)</p>
             </div>
         </div>
         <div id="twitch" style="height: 4rem;"></div>
-        <div data-spy="scroll" data-target="#navbar" data-offset="0"
-            class="card shadow theme-control">
-            <div class="card-body">
-                <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.github.io" height="605px"
+        <div data-spy="scroll" data-target="#navbar" data-offset="0" class="card shadow theme-control">
+            <div class="card-header">
+                <h3><i class="fa fa-twitch"></i> Twitch</h3>
+            </div>
+            <div class="card-body embedHolder">
+                <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.github.io" height="100%"
                     width="100%" frameborder="false" scrolling="false" allowfullscreen="true"
                     style="border-radius: 5px;">
                 </iframe>
             </div>
-            <div class="card-footer">
-                <a href="https://www.twitch.tv/itsfoodlive" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i> Follow on Twitch</a>
-            </div>
-        </div>
-        <div id="youtube" style="height: 4rem;"></div>
-        <div data-spy="scroll" data-target="#navbar" data-offset="0"
-            class="card shadow theme-control">
             <div class="card-body">
-                <iframe src="https://www.youtube.com/embed/bAFVtqJx9kc" height="605px" width="100%" frameborder="false"
+                <p>Currently I have no schedule on my Twitch, as my life doesn't allow for it. I try to stream often,
+                    however sometimes other things take priority. In a few years, I plan for my life to finally allow me
+                    to have a good schedule set up for my Twitch.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
+                    onmousedown="javascript:fillHeartT()" onmouseup="javascript:fillHeartT()">
+                    <i class="fa fa-heart-o" id="heartot"></i><i class="fas fa-heart invisible pulse" id="heartt"></i> Follow
+                    on Twitch
+                </a>
+            </div>
+            <script type="text/javascript">
+                function fillHeartT() {
+                    $('#heartot').addClass('invisible');
+                    $('#heartt').removeClass('invisible');
+                }
+            </script>
+        </div>
+        <div data-spy="scroll" data-target=".navbar" data-offset="0" id="youtube" style="height: 4rem;"></div>
+        <div class="card shadow theme-control">
+            <div class="card-header">
+                <h3><i class="fa fa-youtube"></i> YouTube</h3>
+            </div>
+            <div class="card-body embedHolder">
+                <iframe src="https://www.youtube.com/embed/bAFVtqJx9kc" height="100%" width="100%" frameborder="false"
                     scrolling="false" allowfullscreen="true" style="border-radius: 5px;">
                 </iframe>
             </div>
-            <div class="card-footer">
-                <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> Subscribe on YouTube</a>
+            <div class="card-body">
+                <p>My YouTube Channel should have a video at least once a month, that is what I try to do. If there
+                    isn't a video out for that month, there is probably a reason why and you can learn why in my <a
+                        href="https://discord.gg/P7KDmDk" target="_blank"><i class="fab fa-discord"></i> Discord
+                        Server</a></p>
             </div>
+            <div class="card-footer">
+                <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"
+                    class="btn btn-youtube" onmousedown="javascript:fillHeartYT()">
+                    <i class="fa fa-heart-o" id="heartoyt"></i><i class="fas fa-heart invisible pulse" id="heartyt"></i> Subscribe on YouTube
+                </a>
+            </div>
+            <script type="text/javascript">
+                function fillHeartYT() {
+                    $('#heartoyt').addClass('invisible');
+                    $('#heartyt').removeClass('invisible');
+                }
+            </script>
         </div>
-        <div style="height: 1rem;"></div>
+        <div id="discord" style="height: 4rem;"></div>
+        <div data-spy="scroll" data-target="#navbar" data-offset="0" class="card shadow theme-control">
+            <div class="card-header">
+                <h3><i class="fab fa-discord"></i> Discord</h3>
+            </div>
+            <div class="card-body embedHolder">
+                <p>Join my Discord Server to get updates on when I go live, post a new video, and other announcements I
+                    might make, such as why there won't be a video that month. </p>
+
+            </div>
+            <div class="card-footer">
+                <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"
+                class="btn btn-discord">
+                <i class="fab fa-discord" id="heartoyt"></i> Join the Server
+            </a>
+        </div>
+        </div>
+        <div style="height: 4rem;"></div>
     </main>
+    <div class="containter">
+        <div class="d-flex justify-content-around" style="font-size: smaller;">
+            <p class="text-muted"><i class="fa fa-github"></i> Published on GitHub</p>
+            <p class="text-muted"><i class="fab fa-creative-commons-by"></i> Made by itsfood</p>
+        </div>
+        <div class="d-flex justify-content-center" style="font-size: small;">
+            <p class="text-muted"><i class="fas fa-adjust"></i> to switch themes, change your browser or device settings.</p>
+        </div>
+        <div class="d-flex justify-content-around" style="font-size: small;">
+            <p class="text-muted"><i class="fab fa-safari" title="iOS and MacOS Safari"></i> <i class="fab fa-chrome" title="Google Chrome"></i> Works On <i class="fab fa-edge" title="Microsoft Edge"></i> <i class="fab fa-firefox" title="Mozilla Firefox"></i></p>
+        </div>
+    </div>
 
 
     <!--jQuery CDN -->

@@ -2,6 +2,15 @@
 html {
     scroll-behavior: smooth;
 }
+.invisible {
+    display: none;
+}
+.grow {
+    transform: scale(1.05);
+}
+.shrink {
+    transform: scale(0.95);
+}
 
 /* Theme */
 @media (prefers-color-scheme: light) {
@@ -20,6 +29,9 @@ html {
     .nav-link:hover #navbar-twitch {
         color: #6441A4
     }
+    .nav-link:hover #navbar-discord {
+        color: #7289DA;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,15 +43,18 @@ html {
         --theme-alt: #afafaf;
     }
 }
+
 .theme-control {
     background-color: var(--theme-color);
     color: var(--theme-text);
 }
+
 .theme-control a {
     transition: 150ms ease-in;
     color: var(--theme-text);
     text-decoration: none;
 }
+
 .theme-control a:hover {
     color: var(--theme-alt);
 }
@@ -61,13 +76,19 @@ nav {
 .nav-link {
     color: var(--theme-alt) !important;
 }
+
 .nav-link:hover {
+    color: var(--theme-text) !important;
+}
+
+.active {
     color: var(--theme-text) !important;
 }
 
 .nav-link #navbar-youtube,
 .nav-link #navbar-twitch,
-.nav-link #navbar-home {
+.nav-link #navbar-home,
+.nav-link #navbar-discord {
     transition: 150ms ease-in;
 }
 
@@ -77,4 +98,87 @@ a:hover {
 
 .card {
     border: none
+}
+
+@media only screen and (max-width: 576px) {
+    .embedHolder {
+        height: 290px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .embedHolder {
+        height: 305px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .embedHolder {
+        height: 405px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .embedHolder {
+        height: 545px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .embedHolder {
+        height: 645px;
+    }
+}
+
+.btn {
+    outline: none !important;
+}
+
+.btn-twitch {
+    background-color: #6441A4;
+    color: white !important;
+}
+.btn-twitch:hover {
+    background-color: rgb(65, 42, 107);
+}
+.btn-twitch:active {
+    transform: scale(0.95);
+}
+
+.btn-youtube {
+    background-color: red;
+    color: white !important;
+}
+.btn-youtube:hover {
+    background-color: rgb(199, 0, 0);
+}
+.btn-youtube:active {
+    transform: scale(0.95);
+}
+
+.btn-discord {
+    background-color: #7289DA;
+    color: white !important;
+}
+.btn-discord:hover {
+    background-color: rgb(90, 108, 170);
+}
+.btn-discord:active {
+    transform: scale(0.95);
+}
+
+/* Animations */
+.pulse {
+    animation: pulse 1500ms ease-out infinite
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
