@@ -2,12 +2,15 @@
 html {
     scroll-behavior: smooth;
 }
+
 .invisible {
     display: none;
 }
+
 .grow {
     transform: scale(1.05);
 }
+
 .shrink {
     transform: scale(0.95);
 }
@@ -29,6 +32,7 @@ html {
     .nav-link:hover #navbar-twitch {
         color: #6441A4
     }
+
     .nav-link:hover #navbar-discord {
         color: #7289DA;
     }
@@ -64,7 +68,21 @@ html {
 body {
     background-color: var(--theme-web-bg);
     color: var(--theme-text) !important;
+    cursor: default;
+    /*disables text selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+/*Hides scrollbars on webKit browsers*/
+body::-webkit-scrollbar {
+    display: none
+}
+
 
 nav {
     background-color: var(--theme-color);
@@ -72,6 +90,7 @@ nav {
     font-size: 1.3rem;
     height: 4rem;
 }
+
 .nav {
     left: 120px;
 }
@@ -94,10 +113,12 @@ nav {
         top: -5px !important;
         left: -5px !important;
     }
+
     .nav {
         left: 70px !important;
     }
 }
+
 .navbar-brand {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -162,9 +183,11 @@ a:hover {
     background-color: #6441A4;
     color: white !important;
 }
+
 .btn-twitch:hover {
     background-color: rgb(65, 42, 107);
 }
+
 .btn-twitch:active {
     transform: scale(0.95);
 }
@@ -173,9 +196,11 @@ a:hover {
     background-color: red;
     color: white !important;
 }
+
 .btn-youtube:hover {
     background-color: rgb(199, 0, 0);
 }
+
 .btn-youtube:active {
     transform: scale(0.95);
 }
@@ -184,9 +209,11 @@ a:hover {
     background-color: #7289DA;
     color: white !important;
 }
+
 .btn-discord:hover {
     background-color: rgb(90, 108, 170);
 }
+
 .btn-discord:active {
     transform: scale(0.95);
 }
@@ -195,13 +222,16 @@ a:hover {
 .pulse {
     animation: pulse 1500ms ease-out infinite
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
