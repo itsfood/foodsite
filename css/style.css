@@ -72,6 +72,9 @@ nav {
     font-size: 1.3rem;
     height: 4rem;
 }
+.nav {
+    left: 120px;
+}
 
 .nav-link {
     color: var(--theme-alt) !important;
@@ -83,11 +86,16 @@ nav {
 
 @media only screen and (max-width: 768px) {
     .navbar-brand {
+        width: 65px !important;
+        height: 75px !important;
         border-top-right-radius: 50% !important;
         border-bottom-left-radius: 0% !important;
         position: absolute;
         top: -5px !important;
         left: -5px !important;
+    }
+    .nav {
+        left: 70px !important;
     }
 }
 .navbar-brand {
