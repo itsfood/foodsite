@@ -118,12 +118,19 @@ nav {
         left: 70px !important;
     }
 }
+@media only screen and (min-width: 768px) {
+    .navbar {
+        opacity: 0.95;
+        backdrop-filter: blur(100px);
+    }
+}
 
 .navbar-brand {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     position: absolute !important;
     top: -5px !important;
+    opacity: 1;
 }
 
 .active {
