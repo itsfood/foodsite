@@ -25,16 +25,16 @@ html {
         --theme-alt: #3f3f3f;
     }
 
-    .nav-link:hover #navbar-youtube {
-        color: red;
+    .active #navbar-youtube, .nav-link:hover #navbar-youtube {
+        color: red !important;
     }
 
-    .nav-link:hover #navbar-twitch {
-        color: #6441A4
+    .active #navbar-twitch, .nav-link:hover #navbar-twitch {
+        color: #6441A4 !important;
     }
 
-    .nav-link:hover #navbar-discord {
-        color: #7289DA;
+    .active #navbar-discord, .nav-link:hover #navbar-discord {
+        color: #7289DA !important;
     }
 }
 
