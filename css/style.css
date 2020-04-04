@@ -187,6 +187,7 @@ a:hover {
 .btn-twitch {
     background-color: #6441A4;
     transition: 300ms ease !important;
+    color: white !important;
 }
 
 .btn-twitch:hover {
@@ -201,7 +202,7 @@ a:hover {
 .btn-youtube {
     background-color: red;
     transition: 300ms ease !important;
-    
+    color: white !important;    
 }
 .btn-youtube:hover {
     background-color: rgb(175, 0, 0);
@@ -214,6 +215,7 @@ a:hover {
 .btn-discord {
     background-color: #7289DA;
     transition: 300ms ease !important;
+    color: white !important;
 }
 
 .btn-discord:hover {
