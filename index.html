@@ -21,12 +21,12 @@
     <script src="https://kit.fontawesome.com/32cc714e85.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg shadow fixed-top" id="navbar">
-        <img class="navbar-brand" src="img/profile.png" height="110px" width="100px" draggable="false" >
+<body data-spy="scroll" data-target="#navbar" data-offset="10">
+    <nav id="navbar" class="navbar navbar-expand-lg shadow fixed-top">
+        <img class="navbar-brand" src="img/profile.png" height="110px" width="100px" draggable="false">
         <ul class="nav" style="position: absolute">
             <li class="nav-item">
-                <a class="nav-link" href="#top">
+                <a class="nav-link " href="#top">
                     <i class="fa fa-home" id="navbar-home"></i>
                 </a>
             </li>
@@ -36,7 +36,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#youtube" ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
+                <a class="nav-link" href="#youtube"
+                    ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
                     <i class="fa fa-youtube" id="navbar-youtube"></i>
                 </a>
             </li>
@@ -57,8 +58,8 @@
             </div>
         </div>
         <div class="alert alert-info shadow mb-2">
-            <strong>Info!</strong> If you have come accross this website, it is still in development! You can use basic
-            features but that is all.
+            <strong>Info!</strong> If you have come accross this website, it is still in development! There are some
+            hidden features, you should go find them!
         </div>
         <div class="mt-3 card shadow theme-control">
             <div class="card-body">
@@ -68,7 +69,7 @@
             </div>
         </div>
         <div id="twitch" style="height: 4rem;"></div>
-        <div data-spy="scroll" data-target="#navbar" data-offset="0" class="card shadow theme-control">
+        <div class="card shadow theme-control">
             <div class="card-header">
                 <h3><i class="fa fa-twitch"></i> Twitch</h3>
             </div>
@@ -79,14 +80,17 @@
                 </iframe>
             </div>
             <div class="card-body">
-                <p>Currently I have no schedule on my Twitch, as my life doesn't allow for it. I try to stream often,
-                    however sometimes other things take priority. In a few years, I plan for my life to finally allow me
+                <p>Currently I have no schedule on my Twitch, as my life doesn't allow for it. I try to stream
+                    often,
+                    however sometimes other things take priority. In a few years, I plan for my life to finally
+                    allow me
                     to have a good schedule set up for my Twitch.</p>
             </div>
             <div class="card-footer">
                 <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
                     onmousedown="javascript:fillHeartT()">
-                    <i class="fa fa-heart-o" id="heartot"></i><i class="fas fa-heart invisible pulse" id="heartt"></i> Follow
+                    <i class="fa fa-heart-o" id="heartot"></i><i class="fas fa-heart invisible pulse" id="heartt"></i>
+                    Follow
                     on Twitch
                 </a>
             </div>
@@ -97,7 +101,7 @@
                 }
             </script>
         </div>
-        <div data-spy="scroll" data-target=".navbar" data-offset="0" id="youtube" style="height: 4rem;"></div>
+        <div id="youtube" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
             <div class="card-header">
                 <h3><i class="fa fa-youtube"></i> YouTube</h3>
@@ -116,7 +120,8 @@
             <div class="card-footer">
                 <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"
                     class="btn btn-youtube" onmousedown="javascript:fillHeartYT()">
-                    <i class="fa fa-heart-o" id="heartoyt"></i><i class="fas fa-heart invisible pulse" id="heartyt"></i> Subscribe on YouTube
+                    <i class="fa fa-heart-o" id="heartoyt"></i><i class="fas fa-heart invisible pulse" id="heartyt"></i>
+                    Subscribe on YouTube
                 </a>
             </div>
             <script type="text/javascript">
@@ -127,21 +132,21 @@
             </script>
         </div>
         <div id="discord" style="height: 4rem;"></div>
-        <div data-spy="scroll" data-target="#navbar" data-offset="0" class="card shadow theme-control">
+        <div class="card shadow theme-control">
             <div class="card-header">
                 <h3><i class="fab fa-discord"></i> Discord</h3>
             </div>
             <div class="card-body embedHolder">
-                <p>Join my Discord Server to get updates on when I go live, post a new video, and other announcements I
+                <p>Join my Discord Server to get updates on when I go live, post a new video, and other
+                    announcements I
                     might make, such as why there won't be a video that month. </p>
 
             </div>
             <div class="card-footer">
-                <a href="https://discord.gg/P7KDmDk" target="_blank"
-                class="btn btn-discord">
-                <i class="fab fa-discord" id="heartoyt"></i> Join the Server
-            </a>
-        </div>
+                <a href="https://discord.gg/P7KDmDk" target="_blank" class="btn btn-discord">
+                    <i class="fab fa-discord" id="heartoyt"></i> Join the Server
+                </a>
+            </div>
         </div>
         <div style="height: 4rem;"></div>
     </main>
@@ -151,17 +156,20 @@
             <p class="text-muted"><i class="fab fa-creative-commons-by"></i> Made by itsfood</p>
         </div>
         <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted"><i class="fas fa-adjust"></i> To switch themes, change your browser or device settings.</p>
+            <p class="text-muted"><i class="fas fa-adjust"></i> To switch themes, change your browser or device
+                settings.</p>
         </div>
         <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted"><i class="fab fa-safari" title="iOS and MacOS Safari"></i> <i class="fab fa-chrome" title="Google Chrome"></i> Works On <i class="fab fa-edge" title="Microsoft Edge"></i> <i class="fab fa-firefox" title="Mozilla Firefox"></i></p>
+            <p class="text-muted"><i class="fab fa-safari" title="iOS and MacOS Safari"></i> <i class="fab fa-chrome"
+                    title="Google Chrome"></i> Works On <i class="fab fa-edge" title="Microsoft Edge"></i> <i
+                    class="fab fa-firefox" title="Mozilla Firefox"></i></p>
         </div>
     </div>
 
 
     <!--jQuery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
 </body>
 
 </html>

@@ -66,6 +66,7 @@ html {
 /* Other Adjustments */
 
 body {
+    position: relative;
     background-color: var(--theme-web-bg);
     color: var(--theme-text) !important;
     cursor: default;
@@ -118,6 +119,7 @@ nav {
         left: 70px !important;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .navbar {
         opacity: 0.95;
@@ -184,6 +186,7 @@ a:hover {
 
 .btn {
     outline: none !important;
+    transition: 300ms ease-in;
 }
 
 .btn-twitch {
@@ -227,7 +230,11 @@ a:hover {
 
 /* Animations */
 .pulse {
-    animation: pulse 1500ms ease-out infinite
+    animation: pulse 1500ms ease-out infinite;
+}
+
+.hover-pulse:hover {
+    animation: pulse 1500ms ease-out infinite;
 }
 
 @keyframes pulse {
@@ -241,5 +248,23 @@ a:hover {
 
     100% {
         transform: scale(1);
+    }
+}
+
+.grow {
+    animation: grow 1000ms ease;
+}
+
+.hover-grow:hover {
+    animation: grow 1000ms ease;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
     }
 }
