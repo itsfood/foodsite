@@ -118,11 +118,12 @@
                         Server</a></p>
             </div>
             <div class="card-footer">
-                <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-youtube"
+                <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank" class="btn btn-youtube"
                     onmousedown="javascript:fillHeartYT()">
                     <i class="fa fa-heart-o" id="heartoyt"></i><i class="fas fa-heart invisible pulse" id="heartyt"></i>
                     Subscribe on YouTube
                 </a>
+                <p>If the button above isn't visible, click <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank">here</a>.</p>
             </div>
             <script type="text/javascript">
                 function fillHeartYT() {
@@ -160,15 +161,33 @@
                 settings.</p>
         </div>
         <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted"><i class="fab fa-safari" title="iOS and MacOS Safari"></i> <i class="fab fa-chrome"
-                    title="Google Chrome"></i> Works On <i class="fab fa-edge" title="Microsoft Edge"></i> <i
-                    class="fab fa-firefox" title="Mozilla Firefox"></i></p>
+            <p class="text-muted"><i class="fab fa-safari" title="iOS and MacOS Safari" id="Safari"></i> <i
+                    class="fab fa-chrome" title="Google Chrome" id="Chrome"></i> Works On <i class="fab fa-edge"
+                    title="Microsoft Edge" id="Microsoft Edge"></i> <i class="fab fa-firefox" title="Mozilla Firefox"
+                    id="Firefox"></i></p>
         </div>
     </div>
 
     <!--jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+    <!-- Browser Detect -->
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>
+    <script src="2-bowser.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            // PARSE USER AGENT
+            var result = bowser.getParser(navigator.userAgent).getResult();
+
+            // BROWSER INFO
+            console.log(result.browser.name);
+
+            // PAGE CUSTOMIZATION
+            $(`#${result.browser.name}`).addClass('currentBrowser');
+        });
+    </script>
 </body>
 
 </html>
+
+<!-- Hi. All of this was written by itsfood. You can read it and tell me if I should change anything, but you cannot use it as yours. Thanks! Copyright 2020 itsfood. -->

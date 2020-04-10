@@ -227,6 +227,11 @@ a:hover {
     transform: scale(0.95);
 }
 
+.currentBrowser {
+    color: var(--theme-text) !important;
+    fill: var(--theme-text) !important;
+}
+
 /* Animations */
 .pulse {
     animation: pulse 1500ms ease-out infinite;
