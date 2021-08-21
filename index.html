@@ -16,7 +16,7 @@
     <!-- Personal CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- Icon Kit from Font Awesome -->
-    <script src="https://kit.fontawesome.com/32cc714e85.js" crossorigin="anonymous"></script>
+    <link href="./css/fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="10">
@@ -24,19 +24,19 @@
         <img class="navbar-brand" src="img/logo.png" height="110px" width="100px" draggable="false">
         <ul class="nav" style="position: absolute">
             <li class="nav-item">
-                <a class="nav-link " href="#top">
+                <a class="nav-link active" href="#top">
                     <i class="fa fa-home" id="navbar-home"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#twitch" ondblclick="window.open('https://www.twitch.com/itsfoodlive')">
-                    <i class="fa fa-twitch" id="navbar-twitch"></i>
+                    <i class="fab fa-twitch" id="navbar-twitch"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#youtube"
                     ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
-                    <i class="fa fa-youtube" id="navbar-youtube"></i>
+                    <i class="fab fa-youtube" id="navbar-youtube"></i>
                 </a>
             </li>
             <li class="nav-item">
@@ -70,7 +70,7 @@
         <div id="twitch" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
             <div class="card-header">
-                <h3><i class="fa fa-twitch"></i> Twitch</h3>
+                <h3><i class="fab fa-twitch"></i> Twitch</h3>
             </div>
             <div class="card-body embedHolder">
                 <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.github.io" height="100%"
@@ -99,7 +99,7 @@
         <div id="youtube" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
             <div class="card-header">
-                <h3><i class="fa fa-youtube"></i> YouTube</h3>
+                <h3><i class="fab fa-youtube"></i> YouTube</h3>
             </div>
             <div class="card-body embedHolder">
                 <iframe src="https://www.youtube.com/embed/bAFVtqJx9kc" height="100%" width="100%" frameborder="false"
