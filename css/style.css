@@ -3,18 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.invisible {
-  display: none;
-}
-
-.grow {
-  transform: scale(1.05);
-}
-
-.shrink {
-  transform: scale(0.95);
-}
-
 /* Theme */
 @media (prefers-color-scheme: light) {
   :root {
@@ -23,21 +11,6 @@ html {
     --theme-color: var(--light);
     --theme-primary: var(--primary);
     --theme-alt: #3f3f3f;
-  }
-
-  .active #navbar-youtube,
-  .nav-link:hover #navbar-youtube {
-    color: red !important;
-  }
-
-  .active #navbar-twitch,
-  .nav-link:hover #navbar-twitch {
-    color: #6441a4 !important;
-  }
-
-  .active #navbar-discord,
-  .nav-link:hover #navbar-discord {
-    color: #5865f2 !important;
   }
 }
 
@@ -87,11 +60,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Navbar */
 nav {
   background-color: var(--theme-color);
   color: var(--theme-alt);
   font-size: 1.3rem;
   height: 4rem;
+}
+.navbar {
+  background-color: var(--theme-color) !important;
 }
 
 .nav {
@@ -104,6 +81,21 @@ nav {
 
 .nav-link:hover {
   color: var(--theme-text) !important;
+}
+
+.active #navbar-youtube,
+.nav-link:hover #navbar-youtube {
+  color: #ff0000 !important;
+}
+
+.active #navbar-twitch,
+.nav-link:hover #navbar-twitch {
+  color: #6441a4 !important;
+}
+
+.active #navbar-discord,
+.nav-link:hover #navbar-discord {
+  color: #5865f2 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -119,13 +111,6 @@ nav {
 
   .nav {
     left: 70px !important;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar {
-    opacity: 0.95;
-    backdrop-filter: blur(100px);
   }
 }
 
@@ -232,6 +217,13 @@ a:hover {
 .currentBrowser {
   color: var(--theme-text) !important;
   fill: var(--theme-text) !important;
+}
+
+#bgTop {
+  background-image: url(../img/gradient.png);
+  background-size: cover;
+  height: fit-content;
+  width: 100vw;
 }
 
 /* Animations */
