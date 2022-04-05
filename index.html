@@ -63,14 +63,30 @@
                 <h3><i class="fab fa-discord"></i> Discord</h3>
             </div>
             <div class="card-body">
-                <p>Join my Discord Server to get updates on when I go live, post a new video, and other
-                    announcements I
-                    might make, such as why there won't be a video that month. </p>
-            </div>
-            <div class="card-footer">
-                <a href="https://discord.gg/P7KDmDk" target="_blank" class="btn btn-discord">
-                    <i class="fab fa-discord" id="heartoyt"></i> Join the Server
-                </a>
+                <div class="row">
+                    <div class="col card shadow theme-control">
+                        <div class="card-body m-2">
+                            <p>Join my Discord Server to get updates on when I go live, post a new video, and other
+                                announcements I might make, such as why there won't be a video that month.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a target="_blank" class="btn btn-discord">
+                                Server Closed Temporarily
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col card shadow theme-control">
+                        <div class="card-body m-2">
+                            <p>Join the Corruption Inc Discord Server to chill with my team and our community! We have
+                                Craig, so you can't really say no to that.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://discord.corruption.live/" target="_blank" class="btn btn-discord">
+                                Join the Server
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="youtube" style="height: 4rem;"></div>
@@ -92,16 +108,9 @@
             <div class="card-footer">
                 <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"
                     class="btn btn-youtube" onmousedown="javascript:fillHeartYT()">
-                    <i class="fa fa-heart-o" id="heartoyt"></i><i class="fas fa-heart invisible pulse" id="heartyt"></i>
                     Subscribe on YouTube
                 </a>
             </div>
-            <script type="text/javascript">
-                function fillHeartYT() {
-                    $('#heartoyt').addClass('invisible');
-                    $('#heartyt').removeClass('invisible');
-                }
-            </script>
         </div>
         <div id="twitch" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
@@ -115,18 +124,10 @@
             <div class="card-footer">
                 <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
                     onmousedown="javascript:fillHeartT()">
-                    <i class="fa fa-heart-o" id="heartot"></i><i class="fas fa-heart invisible pulse" id="heartt"></i>
                     Follow and Subscribe on Twitch
                 </a>
             </div>
-            <script type="text/javascript">
-                function fillHeartT() {
-                    $('#heartot').addClass('invisible');
-                    $('#heartt').removeClass('invisible');
-                }
-            </script>
         </div>
-        <div style="height: 4rem;"></div>
     </main>
     <div class="containter">
         <div class="d-flex justify-content-around" style="font-size: smaller;">
