@@ -6,10 +6,10 @@ html {
 /* Theme */
 @media (prefers-color-scheme: light) {
   :root {
-    --theme-web-bg: white;
+    --theme-web-bg: #ebebeb;
     --theme-text: black;
-    --theme-color: var(--light);
-    --theme-primary: var(--primary);
+    --theme-color: white;
+    --theme-primary: #007bff;
     --theme-alt: #3f3f3f;
   }
 }
@@ -18,8 +18,8 @@ html {
   :root {
     --theme-web-bg: #1a1a1a;
     --theme-text: white;
-    --theme-color: var(--dark);
-    --theme-primary: var(--primary);
+    --theme-color: #1f1f1f;
+    --theme-primary: #007bff;
     --theme-alt: #afafaf;
   }
 }

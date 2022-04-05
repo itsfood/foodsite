@@ -7,94 +7,72 @@
     <title>itsfood</title>
     <link href="img/icon.png" rel="icon">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Personal CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- Icon Kit from Font Awesome -->
-    <link href="./css/fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="10">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <img class="navbar-brand" src="img/logo.png" height="110px" width="100px" draggable="false">
-        <ul class="nav" style="position: absolute">
-            <li class="nav-item">
-                <a class="nav-link" href="#top">
-                    <i class="fa fa-home" id="navbar-home"></i>
-                </a>
-            </li>
-            <li class="nav-item disabled">
-                <a class="nav-link" ondblclick="javascript:alert('I don\'t stream anymore.')">
-                    <i class="fab fa-twitch" id="navbar-twitch"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#youtube"
-                    ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
-                    <i class="fab fa-youtube" id="navbar-youtube"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#discord" ondblclick="window.open('https://discord.gg/P7KDmDk')">
-                    <i class="fab fa-discord" id="navbar-discord"></i>
-                </a>
-            </li>
-        </ul>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="img/logo.png" height="110px" width="100px" draggable="false">
+            <ul class="nav" style="position: absolute">
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">
+                        <i class="bi bi-house-fill" id="navbar-home"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#discord" ondblclick="window.open('https://discord.itsfood.xyz')">
+                        <i class="bi bi-discord" id="navbar-discord"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#youtube"
+                        ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
+                        <i class="bi bi-youtube" id="navbar-youtube"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#twitch" ondblclick="alert('I don\'t stream anymore.')">
+                        <i class="bi bi-twitch" id="navbar-twitch"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div id="bgTop">
-        <img class="mx-auto" src="./img/icon.png" id="iconTop" width="auto" height="100vh">
-    </div>
-    <script>
-        $("html").on('scroll', function () {
-            $('#iconTop').height('10%')
-        });
-    </script>
-    <main class="container">
-        <div class="alert alert-info shadow mb-2">
+    <main class="container my-5">
+        <div class="alert alert-info shadow">
             <strong>Info!</strong> If you have come accross this website, it is still in development! There are some
             hidden features, you should go find them!
         </div>
-        <div class="mt-3 card shadow theme-control">
+        <div class="my-3 card shadow theme-control">
             <div class="card-body">
-                <!-- <h3 class="mb-0">Hi, my name is itsfood. And this is my website.</h3><br> -->
-                <p>Hi! I'm itsfood. Currently, I mostly play Minecraft and the occasional random game I find laying
-                    around in my library. I'm on the road to affiliate right now, only need my average viewers! Consider
-                    nicely clicking or tapping the follow button and enable notifications to help me out. Thank you!</p>
+                <p>Hi! I'm itsfood. Currently, I play random games I find laying around in my library. I love making
+                    videos, and I upload them all to YouTube! I used to stream on Twitch, but have lost the time needed
+                    currently to continue that. I will start streaming again later in 2022! Check it out sometime, you
+                    just might enjoy! Subscribe :) (You can always unsub if you end up not enjoying it). Affiliate on
+                    10/26/20!!</p>
             </div>
         </div>
-        <!-- <div id="twitch" style="height: 4rem;"></div>
+        <div id="discord" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
             <div class="card-header">
-                <h3><i class="fab fa-twitch"></i> Twitch</h3>
-            </div>
-            <div class="card-body embedHolder">
-                <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.github.io" height="100%"
-                    width="100%" frameborder="false" scrolling="false" allowfullscreen="true"
-                    style="border-radius: 5px;">
-                </iframe>
+                <h3><i class="fab fa-discord"></i> Discord</h3>
             </div>
             <div class="card-body">
-                <span class="alert alert-info"><strong>Schedule!</strong> Currently, I do not have a schedule on Twitch.
-                    My goal is to stream three times a week, starting around 9:30-10:00pm PST.</span>
+                <p>Join my Discord Server to get updates on when I go live, post a new video, and other
+                    announcements I
+                    might make, such as why there won't be a video that month. </p>
             </div>
             <div class="card-footer">
-                <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
-                    onmousedown="javascript:fillHeartT()">
-                    <i class="fa fa-heart-o" id="heartot"></i><i class="fas fa-heart invisible pulse" id="heartt"></i>
-                    Follow and Subscribe on Twitch
+                <a href="https://discord.gg/P7KDmDk" target="_blank" class="btn btn-discord">
+                    <i class="fab fa-discord" id="heartoyt"></i> Join the Server
                 </a>
             </div>
-            <script type="text/javascript">
-                function fillHeartT() {
-                    $('#heartot').addClass('invisible');
-                    $('#heartt').removeClass('invisible');
-                }
-            </script>
-        </div> -->
+        </div>
         <div id="youtube" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
             <div class="card-header">
@@ -125,21 +103,28 @@
                 }
             </script>
         </div>
-        <div id="discord" style="height: 4rem;"></div>
+        <div id="twitch" style="height: 4rem;"></div>
         <div class="card shadow theme-control">
             <div class="card-header">
-                <h3><i class="fab fa-discord"></i> Discord</h3>
+                <h3><i class="fab fa-twitch"></i> Twitch</h3>
             </div>
             <div class="card-body">
-                <p>Join my Discord Server to get updates on when I go live, post a new video, and other
-                    announcements I
-                    might make, such as why there won't be a video that month. </p>
+                <span class="alert alert-info"><strong>Update!</strong> I have stopped streaming for now, but I will
+                    begin again!</span>
             </div>
             <div class="card-footer">
-                <a href="https://discord.gg/P7KDmDk" target="_blank" class="btn btn-discord">
-                    <i class="fab fa-discord" id="heartoyt"></i> Join the Server
+                <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
+                    onmousedown="javascript:fillHeartT()">
+                    <i class="fa fa-heart-o" id="heartot"></i><i class="fas fa-heart invisible pulse" id="heartt"></i>
+                    Follow and Subscribe on Twitch
                 </a>
             </div>
+            <script type="text/javascript">
+                function fillHeartT() {
+                    $('#heartot').addClass('invisible');
+                    $('#heartt').removeClass('invisible');
+                }
+            </script>
         </div>
         <div style="height: 4rem;"></div>
     </main>
@@ -152,20 +137,19 @@
             <p class="text-muted"><i class="fas fa-adjust"></i> To switch themes, change your browser or device theme
                 settings.</p>
         </div>
-        <div class="d-flex justify-content-around" style="font-size: small;">
+        <!-- <div class="d-flex justify-content-around" style="font-size: small;">
             <p class="text-muted"><i class="fab fa-safari" title="Apple's Safari" id="Safari"></i> <i
                     class="fab fa-chrome" title="Google Chrome" id="Chrome"></i> Works On <i class="fab fa-edge"
                     title="Microsoft Edge" id="Microsoft Edge"></i> <i class="fab fa-firefox" title="Mozilla Firefox"
                     id="Firefox"></i></p>
-        </div>
+        </div> -->
     </div>
 
     <!--jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
     <!-- Browser Detect -->
-    <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>
-    <script src="2-bowser.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>>
     <script type="text/javascript">
         window.addEventListener("load", function () {
             // PARSE USER AGENT
@@ -177,9 +161,9 @@
             // PAGE CUSTOMIZATION
             $(`#${result.browser.name}`).addClass('currentBrowser');
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
 
-<!-- Hi. All of this was written by itsfood. You can read it and tell me if I should change anything, but you cannot use it as yours. Thanks! Copyright 2020 itsfood. -->
+<!-- Hi. All of this was written by itsfood. You can read it and tell me if I should change anything, but you cannot use it as yours. Thanks! Copyright 2022 itsfood. -->
