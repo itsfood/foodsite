@@ -9,8 +9,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!-- Personal CSS -->
+    <!-- Personal CSS (Includes Bootstrap Icons)-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -202,8 +201,8 @@
             </div>
             <div class="card-footer">
                 <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"
-                    class="btn btn-youtube" onmousedown="javascript:fillHeartYT()">
-                    Subscribe on YouTube
+                    class="btn btn-youtube" onmousedown="javascript:fillHeart(this)">
+                    <i class="bi bi-heart"></i> Subscribe on YouTube
                 </a>
             </div>
         </div>
@@ -211,24 +210,24 @@
             <div class="card-header">
                 <h3><i class="bi bi-twitch"></i> Twitch</h3>
             </div>
-            <div class="alert alert-info shadow mx-3 my-2">
+            <div class="alert alert-info mx-3 my-2">
                 <strong>Update!</strong> I have stopped streaming for now, but I
                 will begin again!
             </div>
-            <div class="px-3 py-2 embed-twitch">
+            <!-- <div class="px-3 py-2 embed-twitch">
                 <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.xyz&parent=localhost"
                     height="100%" width="100%" frameborder="false" scrolling="false" allowfullscreen="true"
                     style="border-radius: 5px;">
                 </iframe>
-            </div>
+            </div> -->
             <!-- <div class="card-body">
                 <div class="alert alert-info my-1"><strong>Schedule!</strong> Currently, I do not have a schedule on
                     Twitch. My goal is to stream three times a week, starting around 9:30-10:00pm PST.</div>
             </div> -->
             <div class="card-footer">
                 <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
-                    onmousedown="javascript:fillHeartT()">
-                    Follow and Subscribe on Twitch
+                    onmousedown="javascript:fillHeart(this)">
+                    <i class="bi bi-heart"></i> Follow on Twitch
                 </a>
             </div>
         </div>
@@ -245,9 +244,9 @@
                 settings.</p>
         </div>
         <!-- <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted"><i class="fab fa-safari" title="Apple's Safari" id="Safari"></i> <i
-                    class="fab fa-chrome" title="Google Chrome" id="Chrome"></i> Works On <i class="fab fa-edge"
-                    title="Microsoft Edge" id="Microsoft Edge"></i> <i class="fab fa-firefox" title="Mozilla Firefox"
+            <p class="text-muted"><i class="bi bi-safari" title="Apple's Safari" id="Safari"></i> <i
+                    class="bi bi-chrome" title="Google Chrome" id="Chrome"></i> Works On <i class="bi bi-edge"
+                    title="Microsoft Edge" id="Microsoft Edge"></i> <i class="bi bi-firefox" title="Mozilla Firefox"
                     id="Firefox"></i></p>
         </div> -->
     </div>
@@ -258,10 +257,19 @@
         crossorigin="anonymous"></script>
     <!-- Script -->
     <script>
+        // Initiate Bootstrap compononets
         var alertList = document.querySelectorAll('.alert')
         var alerts = [].slice.call(alertList).map(function (element) {
             return new bootstrap.Alert(element)
         })
+
+        // Fill in heart icons in buttons when clicked (Twitch, YouTube)
+        function fillHeart(elem) {
+            let heart = elem.getElementsByClassName('bi-heart')[0];
+            // console.log(heart)
+            heart.classList.remove('bi-heart')
+            heart.classList.add('bi-heart-fill')
+        }
     </script>
     <!-- Browser Detect -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>>
@@ -281,4 +289,10 @@
 
 </html>
 
-<!-- Hi. All of this was written by itsfood. You can read it and tell me if I should change anything, but you cannot use it as yours. Thanks! Copyright 2022 itsfood. -->
+<!-- Hello fellow coder!
+    I have a simple request of you...
+    You can read my code, and I encourage telling
+    me if I should change anything, but if you could
+    refrain from copying and using it in your own
+    proect, that would be wonderful. Thanks!
+    Copyright 2022 itsfood. -->
