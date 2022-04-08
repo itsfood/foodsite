@@ -161,49 +161,39 @@ a:hover {
 
 .btn {
   text-decoration: none !important;
+  color: white !important;
+}
+.btn:hover {
+  color: white !important;
+}
+.btn:active {
+  transform: scale(0.95);
 }
 
 .btn-twitch {
   background-color: #6441a4;
   transition: 300ms ease !important;
-  color: white !important;
 }
 
 .btn-twitch:hover {
   background-color: rgb(65, 42, 107);
-  color: white !important;
-}
-
-.btn-twitch:active {
-  transform: scale(0.95);
 }
 
 .btn-youtube {
   background-color: red;
   transition: 300ms ease !important;
-  color: white !important;
 }
 .btn-youtube:hover {
   background-color: rgb(175, 0, 0);
-  color: white !important;
-}
-.btn-youtube:active {
-  transform: scale(0.95);
 }
 
 .btn-discord {
   background-color: rgb(89, 102, 242);
   transition: 300ms ease !important;
-  color: white !important;
 }
 
 .btn-discord:hover {
   background-color: rgb(68, 79, 201);
-  color: white !important;
-}
-
-.btn-discord:active {
-  transform: scale(0.95);
 }
 
 .currentBrowser {
