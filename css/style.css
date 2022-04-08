@@ -78,6 +78,8 @@ nav {
 
 .nav-link {
   color: var(--theme-alt) !important;
+  transform: scale(1);
+  transition: 150ms ease;
 }
 
 .nav-link:hover {
@@ -125,6 +127,7 @@ nav {
 
 .active {
   color: var(--theme-text) !important;
+  transform: scale(1.15);
 }
 
 .nav-link #navbar-youtube,
@@ -140,6 +143,11 @@ a:hover {
 
 .card {
   border: none;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.card-body .card {
+  background-color: var(--theme-web-bg);
 }
 
 .embed-youtube {
@@ -148,7 +156,7 @@ a:hover {
 }
 .embed-twitch {
   width: 100%;
-  aspect-ratio: 32/9;
+  aspect-ratio: 16/9;
 }
 
 .btn {
@@ -184,13 +192,13 @@ a:hover {
 }
 
 .btn-discord {
-  background-color: #7289da;
+  background-color: rgb(89, 102, 242);
   transition: 300ms ease !important;
   color: white !important;
 }
 
 .btn-discord:hover {
-  background-color: rgb(69, 83, 133);
+  background-color: rgb(68, 79, 201);
   color: white !important;
 }
 
