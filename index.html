@@ -14,13 +14,13 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="40">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <img class="navbar-brand" src="img/food/logo.png" height="110px" width="100px" draggable="false">
             <ul class="nav" style="position: absolute">
                 <li class="nav-item">
-                    <a class="nav-link" href="#top">
+                    <a class="nav-link active" href="#top">
                         <i class="bi bi-house-fill" id="navbar-home"></i>
                     </a>
                 </li>
@@ -43,57 +43,62 @@
             </ul>
         </div>
     </nav>
-    <main class="container my-5">
-        <div class="alert alert-info shadow">
+    <main class="container my-4">
+        <div class="alert alert-info alert-dismissible shadow fade show" role="alert">
             <strong>Info!</strong> If you have come accross this website, it is still in development! There are some
             hidden features, you should go find them!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="my-3 card shadow theme-control">
-            <div class="card-body">
-                <p>Hi! I'm itsfood. Currently, I play random games I find laying around in my library. I love making
-                    videos, and I upload them all to YouTube! I used to stream on Twitch, but have lost the time needed
-                    currently to continue that. I will start streaming again later in 2022! Check it out sometime, you
-                    just might enjoy! Subscribe :) (You can always unsub if you end up not enjoying it). Affiliate on
-                    10/26/20!!</p>
-            </div>
-        </div>
-        <div class="my-3 card shadow theme-control">
-            <div class="card-header">
-                <h3> <i class="bi bi-link-45deg"></i> Quick Links</h3>
-            </div>
-            <div class="card-body">
-                <div class="d-flex flex-row align-items-center justify-content-around">
-                    <div>
-                        <a href="https://discord.itsfood.xyz" class="btn btn-discord" target="_blank">
-                            <i class="bi bi-discord"></i> Discord
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" class="btn btn-youtube"
-                            target="_blank">
-                            <i class="bi bi-youtube"></i> YouTube
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://streamelements.com/itsfoodlive/tip" class="btn btn-success" target="_blank">
-                            <i class="bi bi-currency-exchange"></i> Donations
-                        </a>
-                    </div>
-                    <div>
-                        <a href="merch.itsfood.xyz" class="btn btn-primary" target="_blank">
-                            <i class="bi bi-bag-fill"></i> Merch
-                        </a>
+        <div id="top">
+            <div class="my-3 card shadow theme-control">
+                <div class="card-body">
+                    <h2 class="card-title">itsfood</h2>
+                    <div class="card-body">
+                        Hi! I'm itsfood. Currently, I play random games I find laying around in my
+                        library. I love making videos, and I upload them all to YouTube! I used to stream on Twitch, but
+                        have lost the time needed currently to continue that. I will start streaming again later in
+                        2022! Check it out sometime, you just might enjoy! Subscribe?!
+                        <p class="text-muted"><i>(You can always unsub if you end
+                                up not enjoying it)</i></p>
                     </div>
                 </div>
-                <p class="text-muted text-center mt-3 m-0">
-                    <i>All buttons will open the link in a new tab</i>
-                </p>
+            </div>
+            <div class="my-3 card shadow theme-control">
+                <div class="card-header">
+                    <h3> <i class="bi bi-link-45deg"></i> Quick Links</h3>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-row align-items-center justify-content-around">
+                        <div>
+                            <a href="https://discord.itsfood.xyz" class="btn btn-discord" target="_blank">
+                                <i class="bi bi-discord"></i> Discord
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" class="btn btn-youtube"
+                                target="_blank">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://streamelements.com/itsfoodlive/tip" class="btn btn-success"
+                                target="_blank">
+                                <i class="bi bi-currency-exchange"></i> Donations
+                            </a>
+                        </div>
+                        <div>
+                            <a href="merch.itsfood.xyz" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-bag-fill"></i> Merch
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-muted text-center mt-3 m-0">
+                        <i>All buttons will open the link in a new tab</i>
+                    </p>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
-        <div id="discord" style="height: 4rem;"></div>
-        <div class="card shadow theme-control">
+        <div class="card shadow theme-control mt-5" id="discord">
             <div class="card-header">
                 <h3><i class="bi bi-discord"></i> Discord</h3>
             </div>
@@ -180,9 +185,7 @@
                 <i>Remember to follow the rules of each server when you join, thank you!</i>
             </p>
         </div>
-        </div>
-        <div id="youtube" style="height: 4rem;"></div>
-        <div class="card shadow theme-control">
+        <div class="card shadow theme-control mt-5" id="youtube">
             <div class="card-header">
                 <h3><i class="bi bi-youtube"></i> YouTube</h3>
             </div>
@@ -204,13 +207,13 @@
                 </a>
             </div>
         </div>
-        <div id="twitch" style="height: 4rem;"></div>
-
-        <div class="alert alert-info shadow"><strong>Update!</strong> I have stopped streaming for now, but I
-            will begin again!</div>
-        <div class="card shadow theme-control">
+        <div class="card shadow theme-control mt-5" id="twitch">
             <div class="card-header">
                 <h3><i class="bi bi-twitch"></i> Twitch</h3>
+            </div>
+            <div class="alert alert-info shadow mx-3 my-2">
+                <strong>Update!</strong> I have stopped streaming for now, but I
+                will begin again!
             </div>
             <div class="px-3 py-2 embed-twitch">
                 <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.xyz&parent=localhost"
@@ -232,11 +235,13 @@
     </main>
     <div class="containter">
         <div class="d-flex justify-content-around" style="font-size: smaller;">
-            <p class="text-muted"><i class="fab fa-github"></i> Published on GitHub</p>
-            <p class="text-muted"><i class="fab fa-creative-commons-by"></i> Made by itsfood</p>
+            <p class="text-muted"><i class="bi bi-github"></i> Published on GitHub</p>
+            <p class="text-muted"><i class="bi bi-person-badge"></i> Made by itsfood</p>
+            <p class="text-muted"><i class="bi bi-flag"></i> Affiliate on 10/26/20!!</p>
         </div>
         <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted"><i class="fas fa-adjust"></i> To switch themes, change your browser or device theme
+            <p class="text-muted"><i class="bi bi-circle-half"></i> To switch themes, change your browser or device
+                theme
                 settings.</p>
         </div>
         <!-- <div class="d-flex justify-content-around" style="font-size: small;">
@@ -247,9 +252,17 @@
         </div> -->
     </div>
 
-    <!--jQuery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+    <!--Bootstrap.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script>
+        var alertList = document.querySelectorAll('.alert')
+        var alerts = [].slice.call(alertList).map(function (element) {
+            return new bootstrap.Alert(element)
+        })
+    </script>
     <!-- Browser Detect -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>>
     <script type="text/javascript">
