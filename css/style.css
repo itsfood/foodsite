@@ -3,9 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Import Bootstrap Icons */
-@import url("./bootstrap-icons/bootstrap-icons.css");
-
 /* Theme */
 @media (prefers-color-scheme: light) {
   :root {
