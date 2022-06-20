@@ -1,0 +1,241 @@
+/* Personal CSS for the food pack website (made by itsfood) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.invisible {
+  display: none;
+}
+
+.grow {
+  transform: scale(1.05);
+}
+
+.shrink {
+  transform: scale(0.95);
+}
+
+/* Theme */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --theme-web-bg: white;
+    --theme-alt-bg: #cecece;
+
+    --theme-text: black;
+    --theme-color: var(--light);
+    --theme-primary: var(--primary);
+    --theme-alt: #3f3f3f;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-web-bg: #1a1a1a;
+    --theme-alt-bg: #2b2b2b;
+
+    --theme-text: white;
+    --theme-color: var(--dark);
+    --theme-primary: var(--primary);
+    --theme-alt: #afafaf;
+  }
+}
+
+.theme-control {
+  background-color: var(--theme-color);
+  color: var(--theme-text);
+}
+
+.theme-control a {
+  transition: 150ms ease-in;
+  color: var(--theme-text);
+  text-decoration: none;
+}
+
+.theme-control a:hover {
+  color: var(--theme-alt);
+}
+.list-group-item {
+  color: white;
+}
+.list-group a:hover .list-group-item {
+  background: var(--theme-alt-bg);
+}
+
+/* Other Adjustments */
+
+body {
+  position: relative;
+  background-color: var(--theme-web-bg);
+  color: var(--theme-text) !important;
+  cursor: default;
+  /*disables text selection*/
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/*Hides scrollbars on webKit browsers*/
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  background-color: var(--theme-color);
+  color: var(--theme-alt);
+  font-size: 1.3rem;
+  height: 4rem;
+}
+
+.nav {
+  left: 120px;
+}
+
+.nav-link {
+  color: var(--theme-alt) !important;
+  transition: 100ms;
+}
+
+.nav-link:hover {
+  color: var(--theme-text) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 65px !important;
+    height: 75px !important;
+    border-top-right-radius: 50% !important;
+    border-bottom-left-radius: 0% !important;
+    position: absolute;
+    top: -5px !important;
+    left: -5px !important;
+  }
+  .nav {
+    left: 70px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+    backdrop-filter: blur(100px);
+  }
+}
+
+.navbar-brand {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute !important;
+  top: -5px !important;
+  opacity: 1;
+}
+
+.active {
+  color: var(--theme-text) !important;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card,
+.jumbotron,
+li,
+ul {
+  border: none;
+  background: var(--theme-color);
+  color: var(--theme-text) !important;
+}
+
+.list-group {
+  border-radius: 5px;
+}
+
+.list-group-item {
+  background: var(--theme-color);
+}
+
+.non-interactive {
+  filter: grayscale(1);
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .embedHolder {
+    height: 290px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .embedHolder {
+    height: 305px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .embedHolder {
+    height: 405px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .embedHolder {
+    height: 545px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .embedHolder {
+    height: 645px;
+  }
+}
+
+.currentBrowser {
+  color: var(--theme-text) !important;
+  fill: var(--theme-text) !important;
+}
+
+/* Animations */
+
+.pulse {
+  animation: pulse 1500ms ease-out infinite;
+}
+
+.hover-pulse:hover {
+  animation: pulse 1500ms ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.grow {
+  animation: grow 1000ms ease;
+}
+
+.hover-grow:hover {
+  animation: grow 1000ms ease;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

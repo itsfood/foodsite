@@ -6,35 +6,35 @@ html {
 /* Fonts */
 @font-face {
   font-family: "Fluro";
-  src: url("./fonts/fluro-regular.woff") format("woff");
+  src: url("../../css/fonts/fluro-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fluro";
-  src: url("./fonts/fluro-light.woff") format("woff");
+  src: url("../../css/fonts/fluro-light.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fluro";
-  src: url("./fonts/fluro-semibold.woff") format("woff");
+  src: url("../../css/fonts/fluro-semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fluro";
-  src: url("./fonts/fluro-bold.woff") format("woff");
+  src: url("../../css/fonts/fluro-bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fluro";
-  src: url("./fonts/fluro-bold-outline.woff") format("woff");
+  src: url("../../css/fonts/fluro-bold-outline.woff") format("woff");
   font-weight: 800;
   font-style: italic;
 }
@@ -111,22 +111,17 @@ h6 {
   font-family: "Fluro", sans-serif;
   font-weight: 600;
 }
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 .text-muted {
   font-weight: 200;
   color: var(--theme-text) !important;
 }
-
-/* Images */
-.page-title {
-  width: 25%;
-  min-width: 280px;
-}
-/* @media (max-width: 768px) {
-  .page-title {
-    width: 50%;
-  }
-} */
 
 /* Navbar */
 nav {
@@ -151,21 +146,6 @@ nav {
 
 .nav-link:hover {
   color: var(--theme-text) !important;
-}
-
-.active #navbar-youtube,
-.nav-link:hover #navbar-youtube {
-  color: #ff0000 !important;
-}
-
-.active #navbar-twitch,
-.nav-link:hover #navbar-twitch {
-  color: #6441a4 !important;
-}
-
-.active #navbar-discord,
-.nav-link:hover #navbar-discord {
-  color: #5865f2 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -197,13 +177,6 @@ nav {
   transform: scale(1.15);
 }
 
-.nav-link #navbar-youtube,
-.nav-link #navbar-twitch,
-.nav-link #navbar-home,
-.nav-link #navbar-discord {
-  transition: 150ms ease-in;
-}
-
 a:hover {
   cursor: pointer;
 }
@@ -224,6 +197,41 @@ a:hover {
 .embed-twitch {
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+/* List Group */
+.list-group {
+  margin: 1rem;
+  background-color: var(--theme-web-bg);
+  color: white;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.list-group p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.list-group-item {
+  background-color: var(--theme-color);
+  color: white;
+}
+.list-group-item .list-group .list-group-item {
+  color: white;
+  background-color: var(--theme-web-bg);
+}
+
+.list-group a {
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  border: 1px solid var(--theme-primary);
+  text-decoration: none !important;
+}
+
+/* Image Carousel */
+.carousel {
+  border-radius: 0.7rem;
+  overflow: hidden;
 }
 
 /* Buttons */
@@ -270,8 +278,9 @@ a:hover {
   border: 1px solid #6441a4 !important;
   transition: 300ms ease !important;
 }
+
 .btn-twitch:hover {
-  background-color: #6441a4 !important;
+  background-color: #6441a4;
 }
 
 .btn-youtube {
@@ -344,4 +353,28 @@ a:hover {
   100% {
     transform: scale(1.1);
   }
+}
+
+.invisible {
+  display: none;
+}
+
+.grow {
+  transform: scale(1.05);
+}
+
+.shrink {
+  transform: scale(0.95);
+}
+
+/* Branding */
+.btn-patreon {
+  background-color: var(--white);
+  color: #ff424d;
+}
+.btn-patreon:hover {
+  color: #ff424d;
+}
+.btn-kofi {
+  background-color: var(--white);
 }

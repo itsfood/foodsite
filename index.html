@@ -41,6 +41,11 @@
                         <i class="bi bi-twitch" id="navbar-twitch"></i>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        <i class="bi bi-brush-fill" id="navbar-projects"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -51,18 +56,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div id="top">
+            <div class="d-flex justify-content-center">
+                <img class="page-title" src="./img/food/text.png" alt="itsfood text with outline duplications below">
+            </div>
             <div class="my-3 card shadow theme-control">
-                <div class="card-header">
-                    <h2 class="card-title">itsfood</h2>
-                </div>
                 <div class="card-body">
                     <div class="card-body">
-                        Hi! I'm itsfood. Currently, I play random games I find laying around in my
+                        Hi! I'm <b>itsfood</b>. Currently, I play random games I find laying around in my
                         library. I love making videos, and I upload them all to YouTube! I used to stream on Twitch, but
                         have lost the time needed currently to continue that. I will start streaming again later in
                         2022! Check it out sometime, you just might enjoy! Subscribe?!
-                        <p class="text-muted"><i>(You can always unsub if you end
-                                up not enjoying it)</i></p>
+                        <p class="text-muted">(You can always unsub if you end
+                            up not enjoying it)</p>
                     </div>
                 </div>
             </div>
@@ -72,28 +77,19 @@
                 </div>
                 <div class="card-body">
                     <div class="d-flex flex-row align-items-center justify-content-around">
-                        <div>
-                            <a href="https://discord.itsfood.xyz" class="btn btn-discord" target="_blank">
-                                <i class="bi bi-discord"></i> Discord
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" class="btn btn-youtube"
-                                target="_blank">
-                                <i class="bi bi-youtube"></i> YouTube
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://streamelements.com/itsfoodlive/tip" class="btn btn-success"
-                                target="_blank">
-                                <i class="bi bi-currency-exchange"></i> Donations
-                            </a>
-                        </div>
-                        <div>
-                            <a href="merch.itsfood.xyz" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-bag-fill"></i> Merch
-                            </a>
-                        </div>
+                        <a href="https://discord.itsfood.xyz" class="btn btn-discord m-1" target="_blank">
+                            <i class="bi bi-discord"></i> Discord
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" class="btn btn-youtube m-1"
+                            target="_blank">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a>
+                        <a href="https://streamelements.com/itsfoodlive/tip" class="btn btn-green m-1" target="_blank">
+                            <i class="bi bi-currency-exchange"></i> Donations
+                        </a>
+                        <a href="merch.itsfood.xyz" class="btn btn-gold m-1" target="_blank">
+                            <i class="bi bi-bag-fill"></i> Merch
+                        </a>
                     </div>
                     <p class="text-muted text-center mt-3 m-0">
                         <i>All buttons will open the link in a new tab</i>
@@ -276,6 +272,43 @@
                 </a>
             </div>
         </div>
+        <div class="card shadow theme-control mt-5" id="projects">
+            <div class="card-header">
+                <h3><i class="bi bi-brush-fill"></i> Projects</h3>
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="text-center">Check out my recent projects</h5>
+                <div class="row justify-content-around">
+                    <div class="col-lg-6 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control d-flex flex-row">
+                            <img src="./img/food/foodcourt.jpg" alt="food court logo" height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3">
+                                <h3>the food court</h3>
+                                <a target="_blank" class="disabled btn btn-discord">
+                                    Join the Server <i class="bi bi-arrow-up-right-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <h5 class="text-center">Check out some of my other work</h5>
+                <div class="row justify-content-around">
+                    <div class="col-lg-3 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control h-100">
+                            <div class="card-body d-flex flex-row">
+                                <p>Check out the foodpack, a Minecraft resource pack with some fun twists. You can view
+                                    the site by visiting the link below!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./foodpack/" class="btn btn-primary">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <div class="containter">
         <div class="d-flex justify-content-around" style="font-size: smaller;">
@@ -285,8 +318,7 @@
         </div>
         <div class="d-flex justify-content-around" style="font-size: small;">
             <p class="text-muted"><i class="bi bi-circle-half"></i> To switch themes, change your browser or device
-                theme
-                settings.</p>
+                theme settings.</p>
         </div>
         <!-- <div class="d-flex justify-content-around" style="font-size: small;">
             <p class="text-muted">
