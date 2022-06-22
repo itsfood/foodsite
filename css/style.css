@@ -122,6 +122,11 @@ h6 {
   width: 25%;
   min-width: 280px;
 }
+@media (prefers-color-scheme: light) {
+  .page-title {
+    filter: invert();
+  }
+}
 /* @media (max-width: 768px) {
   .page-title {
     width: 50%;
@@ -208,6 +213,7 @@ a:hover {
   cursor: pointer;
 }
 
+/* Cards */
 .card {
   border: none;
   border-radius: 0.7rem;
@@ -216,14 +222,60 @@ a:hover {
 .card-body .card {
   background-color: var(--theme-web-bg);
 }
-
-.embed-youtube {
+.card-image {
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
   width: 100%;
-  aspect-ratio: 16/9;
 }
+
+/* Calendar */
+.card-calendar {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  opacity: 0.5;
+}
+.card-day {
+  margin: 0.5rem;
+  width: 100%;
+}
+.card-day .card-title {
+  padding-bottom: 2.5rem;
+}
+.card-time {
+  width: 100%;
+  border-radius: 0.7rem;
+  color: #6441a4;
+  border: 2px solid #6441a4;
+  background-color: #e5d7ff;
+  display: flex;
+  align-items: center;
+}
+.card-time b {
+  margin-left: 0.5rem;
+}
+
+/* Embeds */
+.embed-youtube,
 .embed-twitch {
   width: 100%;
+  border-radius: 0.7rem;
   aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 0.7rem;
+}
+.alert-youtube {
+  color: #ff0000 !important;
+  border: 2px solid #ff0000 !important;
+  background-color: #ffd5d5 !important;
+}
+.alert-twitch {
+  color: #6441a4 !important;
+  border: 2px solid #6441a4 !important;
+  background-color: #e5d7ff !important;
 }
 
 /* Buttons */

@@ -16,13 +16,13 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!-- <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container-fluid">
             <img class="navbar-brand" src="img/food/logo.jpg" height="110px" width="100px" draggable="false">
             <ul class="nav" style="position: absolute">
                 <li class="nav-item">
                     <a class="nav-link active" href="#top">
-                        <i class="bi bi-house-fill" id="navbar-home"></i>
+                        <i class="bi bi-house" id="navbar-home"></i>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -43,82 +43,167 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">
-                        <i class="bi bi-brush-fill" id="navbar-projects"></i>
+                        <i class="bi bi-brush" id="navbar-projects"></i>
                     </a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <main class="container my-4">
-        <div class="alert alert-info alert-dismissible shadow fade show" role="alert">
+        <!-- <div class="alert alert-info alert-dismissible shadow fade show" role="alert">
             <strong>Info!</strong> If you have come accross this website, it is still in development! There are some
             hidden features, you should go find them!
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+        </div> -->
         <div id="top">
             <div class="d-flex justify-content-center">
                 <img class="page-title" src="./img/food/text.png" alt="itsfood text with outline duplications below">
             </div>
-            <div class="my-3 card shadow theme-control">
+            <div class="my-5 card shadow theme-control">
+                <!-- <div class="card-header">
+                </div> -->
                 <div class="card-body">
-                    <div class="card-body">
-                        Hi! I'm <b>itsfood</b>. Currently, I play random games I find laying around in my
+                    <h3><i class="bi bi-person-circle"></i> Hi! I'm itsfood.</h3>
+                    <p>Currently, I play random games I find laying around in my
                         library. I love making videos, and I upload them all to YouTube! I used to stream on Twitch, but
                         have lost the time needed currently to continue that. I will start streaming again later in
                         2022! Check it out sometime, you just might enjoy! Subscribe?!
-                        <p class="text-muted">(You can always unsub if you end
-                            up not enjoying it)</p>
+                    </p>
+                    <p class="text-muted">(You can always unsub if you end
+                        up not enjoying it)</p>
+                    <div id="navbar" class="d-flex flex-row w-100 justify-content-center">
+                        <a class="nav-link active" href="#top">
+                            <i class="bi bi-house" id="navbar-home"></i>
+                        </a>
+                        <a class="nav-link" href="#discord" ondblclick="window.open('https://discord.itsfood.xyz')">
+                            <i class="bi bi-discord" id="navbar-discord"></i>
+                        </a>
+                        <a class="nav-link" href="#youtube"
+                            ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
+                            <i class="bi bi-youtube" id="navbar-youtube"></i>
+                        </a>
+                        <a class="nav-link" href="#twitch" ondblclick="window.open('https://twitch.tv/itsfoodlive')">
+                            <i class="bi bi-twitch" id="navbar-twitch"></i>
+                        </a>
+                        <a class="nav-link" href="#projects">
+                            <i class="bi bi-brush" id="navbar-projects"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="my-3 card shadow theme-control">
+            <div class="my-5 card shadow theme-control">
                 <div class="card-header">
-                    <h3> <i class="bi bi-link-45deg"></i> Quick Links</h3>
+                    <h3> <i class="bi bi-link-45deg"></i> Quick links</h3>
                 </div>
                 <div class="card-body">
                     <div class="d-flex flex-row align-items-center justify-content-around">
-                        <a href="https://discord.itsfood.xyz" class="btn btn-discord m-1" target="_blank">
-                            <i class="bi bi-discord"></i> Discord
+                        <a href="https://merch.itsfood.xyz" class="btn btn-gold m-1" target="_blank">
+                            <i class="bi bi-bag"></i> <span class="d-md-inline d-none">Merch</span>
+                        </a>
+                        <a href="https://discord.itsfood.xyz" class="btn btn-discord m-1 disabled" target="_blank">
+                            <i class="bi bi-discord"></i> <span class="d-md-inline d-none">Discord</span>
+                        </a>
+                        <a href="https://twitch.tv/itsfoodlive" class="btn btn-twitch m-1" target="_blank">
+                            <i class="bi bi-twitch"></i> <span class="d-md-inline d-none">Twitch</span>
                         </a>
                         <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" class="btn btn-youtube m-1"
                             target="_blank">
-                            <i class="bi bi-youtube"></i> YouTube
+                            <i class="bi bi-youtube"></i> <span class="d-md-inline d-none">YouTube</span>
                         </a>
                         <a href="https://streamelements.com/itsfoodlive/tip" class="btn btn-green m-1" target="_blank">
-                            <i class="bi bi-currency-exchange"></i> Donations
-                        </a>
-                        <a href="merch.itsfood.xyz" class="btn btn-gold m-1" target="_blank">
-                            <i class="bi bi-bag-fill"></i> Merch
+                            <i class="bi bi-currency-exchange"></i> <span class="d-md-inline d-none">Donations</span>
                         </a>
                     </div>
-                    <p class="text-muted text-center mt-3 m-0">
-                        <i>All buttons will open the link in a new tab</i>
-                    </p>
+                    <p class="text-muted text-center mt-3 m-0">All buttons will open the link in a new tab</p>
                 </div>
             </div>
         </div>
-        <div class="card shadow theme-control mt-5" id="discord">
+        <div class="my-5 card shadow theme-control" id="projects">
             <div class="card-header">
-                <h3><i class="bi bi-discord"></i> Discord</h3>
+                <h3><i class="bi bi-bag"></i> Merch</h3>
             </div>
             <div class="card-body">
-                <h5 class="text-center">Check out My Discord Servers</h5>
+                <h5 class="text-center">Check out my top picks</h5>
                 <div class="row justify-content-around">
                     <div class="col-lg-6 my-3" style="max-width: 450px;">
                         <div class="col card shadow theme-control d-flex flex-row">
-                            <img src="./img/food/foodcourt.jpg" alt="food court logo" height="180px">
-                            <div class="d-flex align-items-center justify-content-center flex-column m-3">
-                                <h3>the food court</h3>
-                                <a target="_blank" class="disabled btn btn-discord">
-                                    Join the Server <i class="bi bi-arrow-up-right-square"></i>
+                            <img src="./img/food/merch/whitefront.jpg" alt="Front of white shirt showing itsfood logo"
+                                height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>Classic Shirt</h3>
+                                <p>White</p>
+                                <a target="_blank" class="btn btn-gold"
+                                    href="https://test-shop-43.creator-spring.com/listing/launch-collection-june-2022?product=2">
+                                    Buy Now <i class="bi bi-arrow-up-right-square"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 my-3" style="max-width: 450px;">
                         <div class="col card shadow theme-control d-flex flex-row">
+                            <img src="./img/food/merch/mug.jpg" alt="Mug with itsfood text art" height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>Mug</h3>
+                                <p>White / Black</p>
+                                <a target="_blank" class="btn btn-gold"
+                                    href="https://test-shop-43.creator-spring.com/listing/itsfood-text-drink-wear?product=1637">
+                                    Buy Now <i class="bi bi-arrow-up-right-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control d-flex flex-row">
+                            <img src="./img/food/merch/blackback.jpg" alt="Back of black shirt showing itsfood text art"
+                                height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>Essentials Shirt</h3>
+                                <p>Black</p>
+                                <a target="_blank" class="btn btn-gold"
+                                    href="https://test-shop-43.creator-spring.com/listing/launch-collection-june-2022?product=1303">
+                                    Buy Now <i class="bi bi-arrow-up-right-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control d-flex flex-row">
+                            <img src="./img/food/merch/more.jpg" alt="Three items showing more in shop" height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>View more</h3>
+                                <p>Visit the store</p>
+                                <a href="https://merch.itsfood.xyz" class="btn btn-gold" target="_blank">
+                                    Check it out <i class="bi bi-arrow-up-right-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 card shadow theme-control" id="discord">
+            <div class="card-header">
+                <h3><i class="bi bi-discord"></i> Discord</h3>
+            </div>
+            <div class="card-body">
+                <h5 class="text-center">Check out my discord servers</h5>
+                <div class="row justify-content-around">
+                    <div class="col-lg-6 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control d-flex flex-row">
+                            <img src="./img/food/foodcourt.jpg" alt="food court logo" height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>the food court</h3>
+                                <a target="_blank" class="disabled btn btn-discord">
+                                    Join the Server <i class="bi bi-arrow-up-right-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-muted" style="font-size: 14px;">Currently closed</p>
+                    </div>
+                    <div class="col-lg-6 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control d-flex flex-row">
                             <img src="./img/corruption/logo.png" alt="Corruption Inc Logo" height="180px">
-                            <div class="d-flex align-items-center justify-content-center flex-column m-3">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
                                 <h3>Corruption Inc</h3>
                                 <a target="_blank" class="btn btn-discord" href="https://discord.corruption.live">
                                     Join the Server <i class="bi bi-arrow-up-right-square"></i>
@@ -127,9 +212,9 @@
                         </div>
                     </div>
                 </div>
-                <h5 class="mt-2 text-center">Check out some of my Friend's Servers</h5>
+                <h5 class="mt-2 text-center">Check out some of my friend's servers</h5>
                 <div class="row justify-content-around">
-                    <div class="col-lg-3 my-3" style="max-width: 450px;">
+                    <div class="col-lg-4 my-3" style="max-width: 450px;">
                         <div class="card shadow theme-control h-100">
                             <div class="card-body d-flex flex-row">
                                 <p>Wander over to <b>The Editor's Lounge</b>, a Discord server for a podcast hosted by
@@ -145,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 my-3" style="max-width: 450px;">
+                    <div class="col-lg-4 my-3" style="max-width: 450px;">
                         <div class="col card shadow theme-control h-100">
                             <div class="card-body d-flex flex-row">
                                 <p>Check out <b>Sleepy Hamster Hollow</b>, my friend <a
@@ -161,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 my-3" style="max-width: 450px;">
+                    <div class="col-lg-4 my-3" style="max-width: 450px;">
                         <div class="col card shadow theme-control h-100">
                             <div class="card-body d-flex flex-row">
                                 <p>Hop in to
@@ -180,124 +265,201 @@
                     </div>
                 </div>
             </div>
-            <p class="text-muted text-center mt-2">
-                <i>Remember to follow the rules of each server when you join, thank you!</i>
+            <p class="text-muted text-center mt-2">Remember to follow the rules of each server when you join, thank you!
             </p>
         </div>
-        <div class="card shadow theme-control mt-5" id="youtube">
+        <div class="my-5 card shadow theme-control" id="twitch">
+            <div class="card-header">
+                <h3><i class="bi bi-twitch"></i> Twitch</h3>
+            </div>
+            <div class="alert alert-twitch mx-3 my-2">
+                <strong>Update!</strong> I have stopped streaming for now, but I
+                will begin again!
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-md-row flex-column">
+                    <div class="embed-twitch">
+                        <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.xyz&parent=localhost"
+                            height="100%" width="100%" frameborder="false" scrolling="false" allowfullscreen="true">
+                        </iframe>
+                    </div>
+                    <div class="w-100 ps-md-3 pt-3">
+                        <h4>Catch me live</h4>
+                        <p class="card-text">Watch me in the moment on Twitch. Hang out with other fans, and chat with
+                            me live. I'll try to stick to my schedule, but if a stream is canceled there will be a
+                            reason in myDiscord server. Follow and turn on notifications, and consider subscribing to
+                            help support me!
+                        </p>
+                        <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
+                            onmousedown="javascript:fillHeart(this)">
+                            <i class="bi bi-heart"></i> Follow on Twitch
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <h4>Schedule</h4>
+                    <p class="card-text">Wanna know when you can stop by? Check out the schedule below.</p>
+                    <div class="card card-calendar shadow theme-control d-flex flex-md-row flex-column">
+                        <div class="card-day">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-time" style="height: 6rem; margin-top: 1.5rem;">
+                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
+                                <b>TBD</b>
+                            </p>
+                        </div>
+                        <div class="card-day">
+                            <h5 class="card-title">Tuesday</h5>
+                            <p class="card-time" style="height: 3rem; margin-top: 3.5rem;">
+                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
+                                <b>TBD</b>
+                            </p>
+                        </div>
+                        <div class="card-day">
+                            <h5 class="card-title">Wednesday</h5>
+                            <p class="card-time" style="height: 4rem; margin-top: 4.5rem;">
+                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
+                                <b>TBD</b>
+                            </p>
+                        </div>
+                        <div class="card-day">
+                            <h5 class="card-title">Thursday</h5>
+                            <p class="card-time" style="height: 4rem; margin-top: 0.5rem;">
+                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
+                                <b>TBD</b>
+                            </p>
+                        </div>
+                        <div class="card-day">
+                            <h5 class="card-title">Friday</h5>
+                            <p class="card-time" style="height: 6rem; margin-top: 3.5rem;">
+                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
+                                <b>TBD</b>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-muted">Disclaimer: Schedule will be announced when I return to Twitch.</p>
+                </div>
+            </div>
+            <!-- <div class="card-footer">
+            </div> -->
+        </div>
+        <div class="my-5 card shadow theme-control" id="youtube">
             <div class="card-header">
                 <h3><i class="bi bi-youtube"></i> YouTube</h3>
             </div>
             <div class="card-body">
-                <div class="alert alert-info">
-                    <strong>Update!</strong> I have been lacking in the YouTube department as of late. I haven't had the
-                    time to sit down and record a video with my friends, but I have had time to edit. Look below to see
-                    what I've worked on!
+                <div class="alert alert-youtube">
+                    <strong>Update!</strong> I have been lacking in the YouTube department as of late. I
+                    haven't had the time to sit down and record a video with my friends, but I have had time to edit.
+                    Look below to see what I've worked on!
                 </div>
-                <p class="card-text">
-                    My YouTube Channel should have a video at least once a month, that is what I try to do. If there
-                    isn't a video out for that month, there is probably a reason why and you can learn why in my
-                    <a href="https://discord.gg/P7KDmDk" target="_blank"><i class="fab fa-discord"></i> Discord
-                        Server</a>.
-                </p>
-                <!-- <p class="card-text">Want to watch some of the content I have edited? Check out these videos!</p> -->
-                <!-- <div class="row">
+                <div class="d-flex flex-md-row-reverse flex-column">
+                    <div class="embed-youtube">
+                        <iframe src="https://www.youtube.com/embed/bnL9DcNdypw" title="YouTube video player"
+                            frameborder="0" allowfullscreen height="100%" width="100%"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                        </iframe>
+                    </div>
+                    <div class="w-100 pe-md-3 pt-3">
+                        <h4>For when you miss me</h4>
+                        <p class="card-text">
+                            My YouTube Channel should have a video at least once a month. That is what I try
+                            to do. If there isn't a video out for that month, there is probably a reason why, and you
+                            can learn why in my Discord server. Don't forget to subscribe and hit that notification bell
+                            to never miss my uploads!
+                        </p>
+                        <a href="https://youtube.itsfood.xyz/" target="_blank" class="btn btn-youtube"
+                            onmousedown="javascript:fillHeart(this)">
+                            <i class="bi bi-heart"></i> Subscribe on YouTube
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <h4 class="">Videos I've edited</h4>
+                    <p class="card-text">Already seen all of my videos twice over? Try watching some of the
+                        content I
+                        have edited for other YouTubers! See my three favourites below.
+                    </p>
+                </div>
+                <div class="row">
                     <div class="col-sm-4">
                         <div class="card shadow">
-                            <div class="card-header">
-                                <h5>ALIENisLIVE</h5>
-                            </div>
                             <div class="card-body">
-                                <p class="card-text">.</p>
-                                <a href="#" class="btn btn-primary">Go Watch <i
-                                        class="bi bi-arrow-up-right-square"></i></a>
+                                <h5>WE FOUND HER</h5>
+                                <img class="card-image shadow" src="./img/videos/alien-wefoundher.jpg"
+                                    alt="YouTube Thumbnail">
+                                <p class="card-text">A Phasmophobia highlights video</p>
+                                <a href="https://www.youtube.com/watch?v=x2LIrtJvYXI&t=215s" class="btn btn-youtube"
+                                    target="_blank">Go Watch <i class="bi bi-arrow-up-right-square"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="card shadow">
-                            <div class="card-header">
-                                <h5>ALIENisLIVE</h5>
-                            </div>
                             <div class="card-body">
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Go Watch <i
-                                        class="bi bi-arrow-up-right-square"></i></a>
+                                <h5>I Lost It</h5>
+                                <img class="card-image shadow" src="./img/videos/alien-ilostit.jpg"
+                                    alt="YouTube Thumbnail">
+                                <p class="card-text">A Twitch clip meme video</p>
+                                <a href="https://www.youtube.com/watch?v=_NoK8STTquA" class="btn btn-youtube"
+                                    target="_blank">Go Watch <i class="bi bi-arrow-up-right-square"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="card shadow">
-                            <div class="card-header">
-                                <h5>ALIENisLIVE</h5>
-                            </div>
                             <div class="card-body">
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Go Watch <i
-                                        class="bi bi-arrow-up-right-square"></i></a>
+                                <h5>HOW DID HE GET IN?</h5>
+                                <img class="card-image shadow" src="./img/videos/alien-howdidhegetin.jpg"
+                                    alt="YouTube Thumbnail">
+                                <p class="card-text">A Dead Space 3 funny moments video</p>
+                                <a href="https://www.youtube.com/watch?v=FjxwGtZoQVw" class="btn btn-youtube"
+                                    target="_blank">Go Watch <i class="bi bi-arrow-up-right-square"></i></a>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-            <div class="card-footer">
-                <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" target="_blank"
-                    class="btn btn-youtube" onmousedown="javascript:fillHeart(this)">
-                    <i class="bi bi-heart"></i> Subscribe on YouTube
-                </a>
-            </div>
-        </div>
-        <div class="card shadow theme-control mt-5" id="twitch">
-            <div class="card-header">
-                <h3><i class="bi bi-twitch"></i> Twitch</h3>
-            </div>
-            <div class="alert alert-info mx-3 my-2">
-                <strong>Update!</strong> I have stopped streaming for now, but I
-                will begin again!
-            </div>
-            <!-- <div class="px-3 py-2 embed-twitch">
-                <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.xyz&parent=localhost"
-                    height="100%" width="100%" frameborder="false" scrolling="false" allowfullscreen="true"
-                    style="border-radius: 5px;">
-                </iframe>
+            <!-- <div class="card-footer">
             </div> -->
-            <!-- <div class="card-body">
-                <div class="alert alert-info my-1"><strong>Schedule!</strong> Currently, I do not have a schedule on
-                    Twitch. My goal is to stream three times a week, starting around 9:30-10:00pm PST.</div>
-            </div> -->
-            <div class="card-footer">
-                <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
-                    onmousedown="javascript:fillHeart(this)">
-                    <i class="bi bi-heart"></i> Follow on Twitch
-                </a>
-            </div>
         </div>
-        <div class="card shadow theme-control mt-5" id="projects">
+        <div class="my-5 card shadow theme-control" id="projects">
             <div class="card-header">
                 <h3><i class="bi bi-brush-fill"></i> Projects</h3>
             </div>
             <div class="card-body">
-                <!-- <h5 class="text-center">Check out my recent projects</h5>
+                <h5 class="text-center">Check out my projects</h5>
                 <div class="row justify-content-around">
                     <div class="col-lg-6 my-3" style="max-width: 450px;">
                         <div class="col card shadow theme-control d-flex flex-row">
-                            <img src="./img/food/foodcourt.jpg" alt="food court logo" height="180px">
-                            <div class="d-flex align-items-center justify-content-center flex-column m-3">
-                                <h3>the food court</h3>
-                                <a target="_blank" class="disabled btn btn-discord">
-                                    Join the Server <i class="bi bi-arrow-up-right-square"></i>
+                            <img src="./img/editors/logo.jpg" alt="Editors Lounge Logo" height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>Editors' Lounge</h3>
+                                <a target="_blank" class="btn btn-primary"
+                                    href="https://itsfood.github.io/editorslounge/">
+                                    Listen now <i class="bi bi-arrow-up-right-square"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                    <div class="col-lg-6 my-3" style="max-width: 450px;">
+                        <div class="col card shadow theme-control d-flex flex-row">
+                            <img src="./img/corruption/logo.png" alt="Corruption Inc Logo" height="180px">
+                            <div class="d-flex align-items-center justify-content-center flex-column m-3 w-100">
+                                <h3>Corruption Inc</h3>
+                                <a target="_blank" class="btn btn-primary" href="https://corruption.live">
+                                    Check us out <i class="bi bi-arrow-up-right-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h5 class="text-center">Check out some of my other work</h5>
                 <div class="row justify-content-around">
-                    <div class="col-lg-3 my-3" style="max-width: 450px;">
+                    <div class="col-lg-4 my-3" style="max-width: 450px;">
                         <div class="col card shadow theme-control h-100">
                             <div class="card-body d-flex flex-row">
-                                <p>Check out the foodpack, a Minecraft resource pack with some fun twists. You can view
-                                    the site by visiting the link below!</p>
+                                <p>Check out the foodpack, a Minecraft resource pack with some fun twists.
+                                    You can view the site by visiting the link below!</p>
                             </div>
                             <div class="card-footer">
                                 <a href="./foodpack/" class="btn btn-primary">
@@ -312,30 +474,13 @@
     </main>
     <div class="containter">
         <div class="d-flex justify-content-around" style="font-size: smaller;">
-            <p class="text-muted"><i class="bi bi-github"></i> Published on GitHub</p>
-            <p class="text-muted">&copy; Made by itsfood</p>
-            <p class="text-muted"><i class="bi bi-flag-fill"></i> Twitch Affiliate on 10/26/20!!</p>
+            <!-- <p class="text-muted"><i class="bi bi-github"></i> Published on GitHub</p> -->
+            <p class="text-muted"><i class="bi bi-circle-half"></i> Supports dark and light mode</p>
+            <p class="text-muted"><i class="bi bi-camera-video"></i> Twitch Affiliate on 10/26/20!!</p>
         </div>
         <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted"><i class="bi bi-circle-half"></i> To switch themes, change your browser or device
-                theme settings.</p>
+            <p class="text-muted"><i class="bi bi-person-circle"></i> Made by itsfood</p>
         </div>
-        <!-- <div class="d-flex justify-content-around" style="font-size: small;">
-            <p class="text-muted">
-                <i class="bi" title="Apple's Safari" id="safari">
-                    <img src="./css/extra-icons/safari-brands.svg" alt="Safari Logo">
-                </i>
-                <i class="bi" title="Google Chrome" id="chrome">
-                    <img src="./css/extra-icons/chrome-brands.svg" alt="Google Chrome Logo">
-                </i>
-                Works On
-                <i class="bi" title="Microsoft Edge" id="microsoft edge">
-                    <img src="./css/extra-icons/edge-brands.svg" alt="Edge Logo">
-                </i>
-                <i class="bi" title="Mozilla Firefox" id="firefox">
-                    <img src="./css/extra-icons/firefox-brands.svg" alt="Firefox Logo"></i>
-            </p>
-        </div> -->
     </div>
 
     <!--Bootstrap.js CDN -->
@@ -344,7 +489,7 @@
         crossorigin="anonymous"></script>
     <!-- Script -->
     <script>
-        // Initiate Bootstrap compononets
+        // Initiate Bootstrap components
         var alertList = document.querySelectorAll('.alert')
         var alerts = [].slice.call(alertList).map(function (element) {
             return new bootstrap.Alert(element)
@@ -359,7 +504,7 @@
         }
     </script>
     <!-- Browser Detect -->
-    <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>>
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>
     <script type="text/javascript">
         window.addEventListener("load", function () {
             // PARSE USER AGENT
@@ -381,5 +526,5 @@
     You can read my code, and I encourage telling
     me if I should change anything, but if you could
     refrain from copying and using it in your own
-    proect, that would be wonderful. Thanks!
+    project, that would be wonderful. Thanks!
     Copyright 2022 itsfood. -->
