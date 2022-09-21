@@ -27,8 +27,8 @@
         <a class="nav-link" href="#discord" ondblclick="window.open('https://discord.itsfood.xyz')">
             <i class="bi bi-discord" id="navbar-discord"></i>
         </a>
-        <a class="nav-link" href="#twitch" ondblclick="window.open('https://twitch.tv/itsfoodlive')">
-            <i class="bi bi-twitch" id="navbar-twitch"></i>
+        <a class="nav-link" href="#streaming">
+            <i class="bi bi-camera-video-fill" id="navbar-streaming"></i>
         </a>
         <a class="nav-link" href="#youtube"
             ondblclick="window.open('https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg')">
@@ -44,16 +44,17 @@
     <script>
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (event) => {
-                event.preventDefault();
-                let target = event.target.id.replace('navbar-', '');
-                var position = {
-                    'element': document.getElementById(target).getBoundingClientRect().top,
-                    'offset': document.getElementById(target).getBoundingClientRect().top + window.pageYOffset - 45
-                }
-                window.scrollTo({
-                    top: position.offset,
-                    behavior: 'smooth'
-                });
+                // event.preventDefault();
+                // let target = event.target.id.replace('navbar-', '');
+                // var position = {
+                //     'element': document.getElementById(target).getBoundingClientRect().top,
+                //     'offset': document.getElementById(target).getBoundingClientRect().top + window.pageYOffset - 45
+                // }
+                // window.scrollTo({
+                //     top: position.offset,
+                //     behavior: 'smooth'
+                // });
+                window.history.replaceState({ id: "100" }, "itsfood", `https://itsfood.xyz/`);
             }, false);
         })
     </script>
@@ -72,10 +73,8 @@
                     <h3><i class="bi bi-person-circle"></i> Hi! I'm itsfood.</h3>
                 </div>
                 <div class="card-body">
-                    <p>Currently, I play random games I find laying around in my
-                        library. I love making videos, and I upload them all to YouTube! I used to stream on Twitch, but
-                        have lost the time needed currently to continue that. I will start streaming again later in
-                        2022! Check it out sometime, you just might enjoy! Subscribe?!
+                    <p>Currently, I play random games I find laying around in my library. I love making videos, and I
+                        upload them all to YouTube! Check it out sometime, you just might enjoy! Subscribe?!
                     </p>
                     <p class="text-muted">(You can always unsub if you end up not enjoying it)</p>
                 </div>
@@ -92,8 +91,8 @@
                         <a href="https://discord.itsfood.xyz" class="btn btn-discord m-1 disabled" target="_blank">
                             <i class="bi bi-discord"></i> <span>Discord</span>
                         </a>
-                        <a href="https://twitch.tv/itsfoodlive" class="btn btn-twitch m-1" target="_blank">
-                            <i class="bi bi-twitch"></i> <span>Twitch</span>
+                        <a class="btn btn-streaming disabled m-1" target="_blank">
+                            <span>Streaming</span>
                         </a>
                         <a href="https://www.youtube.com/channel/UCKGQCgPYx30GKtWlYYuQzdg" class="btn btn-youtube m-1"
                             target="_blank">
@@ -204,17 +203,6 @@
                         </div>
                     </div>
                     <div class="card-item">
-                        <p>Check out <b>Sleepy Hamster Hollow</b>, my friend <a href="https://www.twitch.tv/pvppyspit"
-                                target="_blank">Pvppyspit's <i class="bi bi-arrow-up-right-circle"></i></a>
-                            server! She's super chill, and so is her community! Go join and chill with
-                            her community.</p>
-                        <div class="item-footer">
-                            <a href="https://discord.gg/gkdGFre59p" target="_blank" class="btn btn-discord">
-                                Join the Server <i class="bi bi-arrow-up-right-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-item">
                         <p>Hop in to <a href="https://www.twitch.tv/nic2496" target="_blank">Two Dyslexic's
                                 <i class="bi bi-arrow-up-right-circle"></i></a> server, <b>Dyslexic's Beanstalk</b>! You
                             can find him chillin' in there often, so go check it out and talk it up with his community.
@@ -231,73 +219,35 @@
                 you!
             </p>
         </div>
-        <div class="card card-content" id="twitch">
+        <div class="card card-content" id="streaming">
             <div class="card-header">
-                <h3><i class="bi bi-twitch"></i> Twitch</h3>
+                <h3>Streaming</h3>
             </div>
-            <div class="alert alert-twitch mx-3 my-2">
-                <strong>Update!</strong> I have stopped streaming for now, but I
-                will begin again!
+            <div class="alert alert-streaming mx-3 my-2">
+                <strong>Update!</strong> With recent news coming from Twitch, I have decided to not return to the
+                platform. Overall, I have decided to focus on YouTube and Discord for the time being. It is not likely
+                that I will stream again in the near future. Thank you for your support!
             </div>
             <div class="card-body">
-                <section class="bicol">
-                    <div class="embed-twitch">
+                <!-- <section class="bicol">
+                    <div class="embed-streaming">
                         <iframe src="https://player.twitch.tv/?channel=itsfoodlive&parent=itsfood.xyz&parent=localhost"
                             frameborder="0" scrolling="no" allowfullscreen="true" height="100%" width="100%"></iframe>
-                        <!-- <script>
-                            document.getElementById('twitch-iframe').addEventListener('load', () => {
-                                console.log('twitch loaded');
-                                setTimeout(() => {
-                                    gsap.to('.navbar', {
-                                        duration: 1,
-                                        display: 'flex',
-                                        opacity: 1,
-                                        ease: 'power3.out'
-                                    });
-                                    gsap.to('main', {
-                                        duration: 1,
-                                        display: 'block',
-                                        y: -document.querySelector('.loader').scrollHeight,
-                                        opacity: 1,
-                                        ease: 'power3.out',
-                                        onComplete: () => {
-                                            gsap.set('main', { y: 0 });
-                                        }
-                                    });
-                                    gsap.to('footer', {
-                                        duration: 1,
-                                        display: 'block',
-                                        opacity: 1,
-                                        ease: 'power3.out'
-                                    });
-                                    gsap.to('.loader', {
-                                        duration: 1,
-                                        opacity: 0,
-                                        y: -document.querySelector('.loader').scrollHeight,
-                                        ease: 'power3.out',
-                                        onComplete: () => {
-                                            document.querySelector('.loader').style.display = 'none';
-                                        }
-                                    })
-                                }, 1000);
-
-                            })
-                        </script> -->
                     </div>
                     <div class="w-100 ps-md-3 pt-3">
                         <h4>Catch me live</h4>
-                        <p>Watch me in the moment on Twitch. Hang out with other fans, and chat
+                        <p>Watch me in the moment. Hang out with other fans, and chat
                             with me live. I'll try to stick to my schedule, but if a stream is canceled there will be a
-                            reason in myDiscord server. Follow and turn on notifications, and consider subscribing
+                            reason in my Discord server. Follow and turn on notifications, and consider subscribing
                             to help support me!
                         </p>
-                        <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-twitch"
+                        <a href="https://www.twitch.tv/itsfoodlive" target="_blank" class="btn btn-streaming"
                             onmousedown="javascript:fillHeart(this)">
                             <i class="bi bi-heart"></i> Follow on Twitch
                         </a>
                     </div>
-                </section>
-                <section>
+                </section> -->
+                <!-- <section>
                     <h4>Schedule</h4>
                     <p>Wanna know when you can stop by? Check out the schedule below.</p>
                     <p class="text-muted">Disclaimer: Schedule will be announced when I return to Twitch.</p>
@@ -305,35 +255,30 @@
                         <div class="card-day">
                             <h5 class="card-title">Monday</h5>
                             <p class="card-time" style="height: 6rem; margin-top: 1.5rem;">
-                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
                                 <b>TBD</b>
                             </p>
                         </div>
                         <div class="card-day">
                             <h5 class="card-title">Tuesday</h5>
                             <p class="card-time" style="height: 3rem; margin-top: 3.5rem;">
-                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
                                 <b>TBD</b>
                             </p>
                         </div>
                         <div class="card-day">
                             <h5 class="card-title">Wednesday</h5>
                             <p class="card-time" style="height: 4rem; margin-top: 4.5rem;">
-                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
                                 <b>TBD</b>
                             </p>
                         </div>
                         <div class="card-day">
                             <h5 class="card-title">Thursday</h5>
                             <p class="card-time" style="height: 4rem; margin-top: 0.5rem;">
-                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
                                 <b>TBD</b>
                             </p>
                         </div>
                         <div class="card-day">
                             <h5 class="card-title">Friday</h5>
                             <p class="card-time" style="height: 6rem; margin-top: 3.5rem;">
-                                <!-- <b>5:00 PM</b> - <b>8:00 PM</b> -->
                                 <b>TBD</b>
                             </p>
                         </div>
@@ -341,9 +286,9 @@
                     <p>Keep my schedule on your calendar! It will update automatically whenever I make
                         changes to it.</p>
                     <a href="webcal://api.twitch.tv/helix/schedule/icalendar?broadcaster_id=401982212"
-                        class="btn btn-twitch disabled"><i class="bi bi-calendar-check"></i> Add to your Calendar</a>
-                </section>
-                <section>
+                        class="btn btn-streaming disabled"><i class="bi bi-calendar-check"></i> Add to your Calendar</a>
+                </section> -->
+                <!-- <section>
                     <h4>Milestones</h4>
                     <p>A look at my Twitch history</p>
                     <div class="timeline">
@@ -353,11 +298,11 @@
                             <h5>Channel Created</h5>
                         </div>
                         <div class="timeline-item">
-                            <p class="text-muted">October 2022</p>
+                            <p class="text-muted">October 2020</p>
                             <h5>Twitch Affiliate</h5>
                         </div>
                     </div>
-                </section>
+                </section> -->
             </div>
             <!-- <div class="card-footer">
             </div> -->
@@ -412,7 +357,7 @@
                         <div class="card-item">
                             <h5>I Lost It</h5>
                             <img class="card-image shadow" src="./img/videos/alien-ilostit.jpg" alt="YouTube Thumbnail">
-                            <p>A Twitch clip meme video</p>
+                            <p>A stream clip meme video</p>
                             <div class="item-footer">
                                 <a href="https://www.youtube.com/watch?v=_NoK8STTquA" class="btn btn-youtube"
                                     target="_blank">Go
@@ -489,9 +434,9 @@
             <div class="card-body">
                 <section class="bicol">
                     <div class="embed-kofi">
-                        <iframe id='kofiframe' width="100%" height="100%"
+                        <iframe id='kofiframe' width="100%" height="130%"
                             src='https://ko-fi.com/itsfood/?hidefeed=true&widget=true&embed=true&preview=true'
-                            style='border:none;width:100%;padding:4px;background:#f9f9f9;' title='itsfood'></iframe>
+                            title='itsfood'></iframe>
                     </div>
                     <div class="w-100 ps-md-3 pt-3">
                         <h5>Help support me</h5>
@@ -532,7 +477,7 @@
             return new bootstrap.Alert(element)
         })
 
-        // Fill in heart icons in buttons when clicked (Twitch, YouTube)
+        // Fill in heart icons in buttons when clicked (YouTube)
         function fillHeart(elem) {
             let heart = elem.getElementsByClassName('bi-heart')[0];
             // console.log(heart)

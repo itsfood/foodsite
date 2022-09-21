@@ -194,7 +194,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 16/9;
 }
-.embed-twitch {
+.embed-streaming {
   width: 100%;
   aspect-ratio: 16/9;
 }
@@ -273,14 +273,14 @@ a:hover {
   background-color: #24bc59 !important;
 }
 
-.btn-twitch {
-  color: #6441a4 !important;
-  border: 1px solid #6441a4 !important;
+.btn-streaming {
+  color: #4185a4 !important;
+  border: 1px solid #4185a4 !important;
   transition: 300ms ease !important;
 }
 
-.btn-twitch:hover {
-  background-color: #6441a4;
+.btn-streaming:hover {
+  background-color: #4185a4;
 }
 
 .btn-youtube {
