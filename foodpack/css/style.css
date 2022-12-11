@@ -1,6 +1,7 @@
 /* Personal CSS for the itsfood website (made by itsfood) */
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: -2rem;
 }
 
 /* Fonts */
